@@ -6,11 +6,20 @@
 /*   By: asemerar <asemerar@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/22 16:43:41 by asemerar      #+#    #+#                 */
-/*   Updated: 2024/02/08 14:42:31 by asemerar      ########   odam.nl         */
+/*   Updated: 2024/07/17 16:32:04 by asemerar      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
+
+# include "../libft/libft.h"
+# include <stdio.h>
+# include <unistd.h>
+# include <fcntl.h>
+# include <stdlib.h>
+# include "cub3D.h"
 
 char	*ft_join_and_free(char *existing_buffer, char *buffer)
 {
