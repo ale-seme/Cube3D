@@ -35,7 +35,8 @@ clean:
 	rm -rf ${DIR_OBJ}
 
 fclean: clean
-	rm -rf ${NAME} make fclean -C libft
+	rm -rf ${NAME}
+	make fclean -C libft
 
 re: fclean all 
 

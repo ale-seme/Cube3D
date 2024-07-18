@@ -49,7 +49,7 @@ int main(void)
     t_lst *list = NULL;
 	int m_lenght = 0;
 
-	int fd = open("map.cub", O_RDONLY, 0777);
+	int fd = open("valid_map.cub", O_RDONLY, 0777);
 	if (fd == -1)
 	{
 		printf("error in opening the map\n");
@@ -58,7 +58,6 @@ int main(void)
     while (1)
     {
         char * line = get_next_line(fd);
-		
         if (line == NULL)
             break ;
 		get_best_x_lenght(&m_lenght, line);
@@ -71,7 +70,6 @@ int main(void)
 		list = list->next;
 	}
 	printf("\n");
-	printf("%d\n", m_lenght);
     close(fd);
     return (0);
 }
