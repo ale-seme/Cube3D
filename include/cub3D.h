@@ -6,10 +6,11 @@
 #include "libft.h"
 
 
-typedef struct s_game
+typedef struct s_lst
 {
-	char **map;
-} t_game;
+	char 			*map_line;
+	struct s_lst 	*next;
+} t_lst;
 
 
 char	*get_next_line(int fd);

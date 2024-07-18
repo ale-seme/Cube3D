@@ -6,7 +6,7 @@
 /*   By: asemerar <asemerar@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/22 16:43:41 by asemerar      #+#    #+#                 */
-/*   Updated: 2024/07/17 16:32:04 by asemerar      ########   odam.nl         */
+/*   Updated: 2024/07/18 12:46:31 by ale           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,7 +132,7 @@ char	*get_next_line(int fd)
 
 // int main (void)
 // {
-//     int fd = open ("foo.txt", O_RDONLY | O_CREAT);
+//     int fd = open ("map.txt", O_RDONLY, 0777);
 //     int i;
 
 //     i = 0;

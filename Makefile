@@ -1,6 +1,6 @@
 NAME = cub3D
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -g -Wall -Werror -Wextra
 
 LINKS =
 
@@ -32,10 +32,10 @@ ${OBJ}: ${DIR_OBJ}/%.o: ${DIR_SRC}/%.c
 	${CC} ${CFLAGS} ${INCLUDES} -c $< -o $@
 
 clean:
-	rm -f ${OBJ}
+	rm -rf ${DIR_OBJ}
 
-fclean:
-	rm -f ${NAME}
+fclean: clean
+	rm -rf ${NAME}
 
 re: fclean all 
 
