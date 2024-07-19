@@ -38,6 +38,25 @@ void	add_new_line(char *line, t_lst **list)
 
 }
 
+int	check_and_itoa(char *str)
+{
+	int	i;
+
+	i = 0;
+	if (str && str[i] == '0' && str[i + 1] != '\0')
+	{
+		return(printf("Error: floor or ceiling color cannot be a 0 followed by sommething else"), 0);
+	}
+	while(str[i])
+	{
+		
+		if (!(str[i] >= '0' && str[i] <= '9'))
+		{
+			accepting only 
+		}
+	}
+}
+
 int	check_identifier_and_info(char *line, int *n_cardinals, int *n_others)
 {
 	int texture_fd;
@@ -60,9 +79,13 @@ int	check_identifier_and_info(char *line, int *n_cardinals, int *n_others)
 		ss = ft_split(line + 2, ",");
 		if (!ss)
 			return(print("error in split\n", 0));
-		while(ss)
+		int i = 0;
+		if (!check_if_right_amount())
+		while(ss[i])
 		{
-			ft_simple
+			if (!check_and_itoa(ss[i]))
+				return (0);
+			
 		}
 		
 	}
