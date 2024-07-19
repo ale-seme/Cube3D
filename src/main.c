@@ -26,21 +26,69 @@ void	add_new_line(char *line, t_lst **list)
 	if (list != NULL)
 	{
 		if (*list == (NULL))
-		{
-			//printf("hello\n");
 			*list = new_node;
-		}
 		else
 		{
 			current = *list;
 			while((current)->next)
-			{
 				current = current->next;
-			}
 			current->next = new_node;
 		}
 	}
 
+}
+
+int	check_identifier_and_info(char *line, int *n_cardinals, int *n_others)
+{
+	int texture_fd;
+	char **ss;
+
+	if (!ft_strncmp(line, "NO ", 3) || !ft_strncmp(line, "SO ", 3) \
+		|| !ft_strncmp(line, "WE ", 3) || !ft_strncmp(line, "EA ", 3))
+	{
+		(*n_cardinals)++;
+		texture_fd = open(line + 3, O_RDONLY, 0777);
+		if (texture_fd == -1)
+		{
+			printf("texture not opening in identifier with the given path\n");
+			return (0);
+		}
+		//close(texture_fd); does MLX need to oppen the texture or does by itself? 
+	}
+	else if (!ft_strncmp(line, "F ", 2))
+	{
+		ss = ft_split(line + 2, ",");
+		if (!ss)
+			return(print("error in split\n", 0));
+		while(ss)
+		{
+			ft_simple
+		}
+		
+	}
+	return (0);
+
+}
+
+int	check_and_copy_map(t_lst *list)
+{
+	int n_cardinals;
+	int n_others;
+	
+	n_cardinals = 0;
+	n_others = 0;
+	if (!list)
+		return (0);
+	while(list)
+	{
+		if (list->map_line[0] == '\n');
+			continue ;
+		if (!check_identifier_and_info(list->map_line, &n_cardinals, &n_others))
+		{
+			printf("Error with the orientation info in th map file\n");
+			return (0);
+		}
+	}
 }
 
 int main(void)
@@ -48,6 +96,7 @@ int main(void)
 	
     t_lst *list = NULL;
 	int m_lenght = 0;
+	int	n_lines = 0;
 
 	int fd = open("valid_map.cub", O_RDONLY, 0777);
 	if (fd == -1)
@@ -60,16 +109,13 @@ int main(void)
         char * line = get_next_line(fd);
         if (line == NULL)
             break ;
+		n_lines++;
 		get_best_x_lenght(&m_lenght, line);
 		add_new_line(line, &list);
         free (line);
     }
-	while(list)
-	{
-		printf("%s", list->map_line);
-		list = list->next;
-	}
-	printf("\n");
+	check_and_copy_map(list);
+
     close(fd);
     return (0);
 }
