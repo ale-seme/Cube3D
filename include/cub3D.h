@@ -5,6 +5,14 @@
 #include <stdio.h>
 #include "libft.h"
 
+typedef struct game_info
+{
+	char **floor_rbg;
+	char **ceiling_rbg;
+
+	
+}
+
 
 typedef struct s_lst
 {

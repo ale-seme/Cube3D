@@ -1,5 +1,6 @@
 #include "cub3D.h"
 #include  "fcntl.h"
+#include <limits.h>
 
 void	get_best_x_lenght(int *m_lenght, char *line)
 {
@@ -37,24 +38,43 @@ void	add_new_line(char *line, t_lst **list)
 	}
 
 }
-
+//need to double check with inputs that are 002 or 00000004
 int	check_and_itoa(char *str)
 {
 	int	i;
+	int	number;
 
 	i = 0;
-	if (str && str[i] == '0' && str[i + 1] != '\0')
-	{
-		return(printf("Error: floor or ceiling color cannot be a 0 followed by sommething else"), 0);
-	}
+	number = 0;
 	while(str[i])
 	{
 		
 		if (!(str[i] >= '0' && str[i] <= '9'))
 		{
-			accepting only 
+			printf("only digit as RBG codes\n");
+			return (-1);
 		}
+		if (number > (255 - (number + str[i] - '0') / 10))
+		{
+			printf("number given as RBG parameter should be max 255\n");
+			return (-1);
+		}
+		number = number * 10 + (str[i] - '0');
+		i++;
 	}
+	return (number);
+}
+
+int	check_if_right_amount(char **ss)
+{
+	int	i;
+	
+	i = 0;
+	while(ss[i])
+	{
+		i++;
+	}
+	return (i == 3);
 }
 
 int	check_identifier_and_info(char *line, int *n_cardinals, int *n_others)
@@ -74,20 +94,19 @@ int	check_identifier_and_info(char *line, int *n_cardinals, int *n_others)
 		}
 		//close(texture_fd); does MLX need to oppen the texture or does by itself? 
 	}
-	else if (!ft_strncmp(line, "F ", 2))
+	else if (!ft_strncmp(line, "F ", 2) || !ft_strncmp(line, "C ", 2))
 	{
 		ss = ft_split(line + 2, ",");
 		if (!ss)
 			return(print("error in split\n", 0));
 		int i = 0;
-		if (!check_if_right_amount())
+		if (!check_if_right_amount(ss))
+			return (printf("The program accepts 3 and only 3 RBGs in the mapfile\n"), 0);
 		while(ss[i])
 		{
-			if (!check_and_itoa(ss[i]))
+			if (check_and_itoa(ss[i]) < 0)
 				return (0);
-			
 		}
-		
 	}
 	return (0);
 
