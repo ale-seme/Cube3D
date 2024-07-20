@@ -5,14 +5,25 @@
 #include <stdio.h>
 #include "libft.h"
 
-typedef struct game_info
-{
-	char **floor_rbg;
-	char **ceiling_rbg;
+// typedef struct game_info
+// {
+// 	int rbgs[2][3];
+
+// 	char **floor_rbg;
+// 	char **ceiling_rbg;
 
 	
-}
+// }
 
+typedef struct s_count
+{
+	int	count_nord;
+	int	count_south;
+	int	count_west;
+	int	count_east;
+	int	count_floor;
+	int	count_ceiling;
+}	t_count;
 
 typedef struct s_lst
 {
