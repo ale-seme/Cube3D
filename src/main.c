@@ -84,10 +84,10 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 {
 	int texture_fd;
 	char **ss;
-	int	flag;
+	//int	flag;
 	int i;
 
-	flag = 0;
+	//flag = 0;
 	if (!ft_strncmp(line, "NO ", 3))
 	{
 		n_ids->count_nord++;
@@ -207,14 +207,28 @@ int	check_and_copy_map(t_lst *list)
 	return (1);
 }
 
-int main(void)
+int	good_argument(int argc, char** argv)
+{
+	int	len;
+
+	if (argc < 2)
+		return (printf("No argv provided\n"), 0);
+	len = ft_strlen(argv[1]);
+	if (len < 4 || argv[1][len -1] != 'b' || argv[1][len -2] != 'u' || argv[1][len - 3] != 'c' || argv[1][len - 4] != '.')
+		return (printf("Error: argv is not .cub file\n"), 0);
+	return (1);
+	
+}
+
+int main(int argc, char **argv)
 {
 	
     t_lst *list = NULL;
+	if (!good_argument(argc, argv))
+		return(1);
 	int m_lenght = 0;
 	int	n_lines = 0;
-
-	int fd = open("valid_map.cub", O_RDONLY, 0777);
+	int fd = open(argv[1], O_RDONLY, 0777);
 	if (fd == -1)
 	{
 		printf("error in opening the map\n");
