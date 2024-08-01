@@ -2,13 +2,18 @@
 #include  "fcntl.h"
 #include <limits.h>
 
-void	get_best_x_lenght(int *m_lenght, char *line)
+void	get_best_x_lenght_and_remove_newline(int *m_lenght, char *line)
 {
 	int i;
 
 	i = 0;
 	while(line && line[i])
 	{
+		if (line[i] == '\n')
+		{
+			line[i] = '\0';
+			break ;
+		}
 		i++;
 	}
 	if (i > *m_lenght)
@@ -16,7 +21,7 @@ void	get_best_x_lenght(int *m_lenght, char *line)
 }
 
 
-void	add_new_line(char *line, t_lst **list)
+void	add_new_node(char *line, t_lst **list)
 {
 
 	t_lst *current;
@@ -94,7 +99,7 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 		texture_fd = open(line + 3, O_RDONLY, 0777);
 		if (texture_fd == -1)
 		{
-			printf("identifier has a texture with invalid path or permissions\n");
+			printf("identifier nord has a texture with invalid path or permissions\n");
 			return (0);
 		}
 		close(texture_fd);
@@ -105,7 +110,7 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 		texture_fd = open(line + 4, O_RDONLY, 0777);
 		if (texture_fd == -1)
 		{
-			printf("identifier has a texture with invalid path or permissions\n");
+			printf("identifier south has a texture with invalid path or permissions\n");
 			return (0);
 		}
 		close(texture_fd);
@@ -116,7 +121,7 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 		texture_fd = open(line + 3, O_RDONLY, 0777);
 		if (texture_fd == -1)
 		{
-			printf("identifier has a texture with invalid path or permissions\n");
+			printf("identifier west has a texture with invalid path or permissions\n");
 			return (0);
 		}
 		close(texture_fd);
@@ -127,7 +132,7 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 		texture_fd = open(line + 3, O_RDONLY, 0777);
 		if (texture_fd == -1)
 		{
-			printf("identifier has a texture with invalid path or permissions\n");
+			printf("identifier east has a texture with invalid path or permissions\n");
 			return (0);
 		}
 		close(texture_fd);
@@ -170,6 +175,7 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 
 int	check_ids_amount(t_count *n_ids)
 {
+	printf("%d%d%d%d%d%d\n", n_ids->count_ceiling, n_ids->count_east, n_ids->count_floor, n_ids->count_nord, n_ids->count_south, n_ids->count_west);
 	if (n_ids->count_ceiling != 1 || n_ids->count_east != 1 || n_ids->count_floor != 1 \
 	|| n_ids->count_nord != 1 || n_ids->count_nord != 1 || n_ids->count_south != 1 \
 	|| n_ids->count_west != 1)
@@ -192,17 +198,16 @@ int	check_and_copy_map(t_lst *list)
 		return (0);
 	while(list)
 	{
-		if (list->map_line[0] == '\n')
+		if (list->map_line[0] == '\n' || list->map_line[0] == '\0') //I think only the null terminator is useful since I removed the newline
 			continue ;
 		if (!check_ids_and_info(list->map_line, &n_ids))
 			return (0);
-		else if (!check_ids_amount(&n_ids))
-		{
-			printf("Error with the identifiers given in the map file\n");
-			return (0);
-		}
-		
 		list = list->next;
+	}
+	if (!check_ids_amount(&n_ids))
+	{
+		printf("Error with the identifiers given in the map file\n");
+		return (0);
 	}
 	return (1);
 }
@@ -226,6 +231,7 @@ int main(int argc, char **argv)
     t_lst *list = NULL;
 	if (!good_argument(argc, argv))
 		return(1);
+	
 	int m_lenght = 0;
 	int	n_lines = 0;
 	int fd = open(argv[1], O_RDONLY, 0777);
@@ -240,12 +246,11 @@ int main(int argc, char **argv)
         if (line == NULL)
             break ;
 		n_lines++;
-		get_best_x_lenght(&m_lenght, line);
-		add_new_line(line, &list);
+		get_best_x_lenght_and_remove_newline(&m_lenght, line);
+		add_new_node(line, &list);
         free (line);
     }
 	check_and_copy_map(list);
-
     close(fd);
     return (0);
 }

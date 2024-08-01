@@ -1,7 +1,7 @@
-NO /home/asemerar/cube3D/map.cub
-SO /home/asemerar/cube3D/map.cub
-WE /home/asemerar/cube3D/map.cub
-EA /home/asemerar/cube3D/map.cub
+NO /home/ale/Cube3D/textures_ids/nord.txt
+SU /home/ale/Cube3D/textures_ids/south.txt
+WE /home/ale/Cube3D/textures_ids/west.txt
+EA /home/ale/Cube3D/textures_ids/east.txt
 
 F 220,100,3
 C 225,30,0
