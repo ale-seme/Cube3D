@@ -107,7 +107,7 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 	else if (!ft_strncmp(line, "SO ", 3))
 	{
 		n_ids->count_south++;
-		texture_fd = open(line + 4, O_RDONLY, 0777);
+		texture_fd = open(line + 3, O_RDONLY, 0777);
 		if (texture_fd == -1)
 		{
 			printf("identifier south has a texture with invalid path or permissions\n");
@@ -175,7 +175,7 @@ int	check_ids_and_info(char *line, t_count *n_ids)
 
 int	check_ids_amount(t_count *n_ids)
 {
-	printf("%d%d%d%d%d%d\n", n_ids->count_ceiling, n_ids->count_east, n_ids->count_floor, n_ids->count_nord, n_ids->count_south, n_ids->count_west);
+	printf("%d%d%d%d%d%d\n", n_ids->count_nord, n_ids->count_south, n_ids->count_west, n_ids->count_east, n_ids->count_floor, n_ids->count_ceiling);
 	if (n_ids->count_ceiling != 1 || n_ids->count_east != 1 || n_ids->count_floor != 1 \
 	|| n_ids->count_nord != 1 || n_ids->count_nord != 1 || n_ids->count_south != 1 \
 	|| n_ids->count_west != 1)
@@ -189,17 +189,22 @@ int	check_and_copy_map(t_lst *list)
 
 	n_ids.count_nord = 0;
 	n_ids.count_south = 0;
-	n_ids.count_east = 0;
-	n_ids.count_ceiling = 0;
-	n_ids.count_floor = 0;
 	n_ids.count_west = 0;
+	n_ids.count_east = 0;
+	n_ids.count_floor = 0;
+	n_ids.count_ceiling = 0;
 
 	if (!list)
 		return (0);
 	while(list)
 	{
-		if (list->map_line[0] == '\n' || list->map_line[0] == '\0') //I think only the null terminator is useful since I removed the newline
+		if (list->map_line[0] == '\n' || list->map_line[0] == '\0')
+		{
+			list = list->next;
+			if (!list)
+				break ;
 			continue ;
+		} //I think only the null terminator is useful since I removed the newline
 		if (!check_ids_and_info(list->map_line, &n_ids))
 			return (0);
 		list = list->next;

@@ -1,5 +1,5 @@
 NO /home/ale/Cube3D/textures_ids/nord.txt
-SU /home/ale/Cube3D/textures_ids/south.txt
+SO /home/ale/Cube3D/textures_ids/south.txt
 WE /home/ale/Cube3D/textures_ids/west.txt
 EA /home/ale/Cube3D/textures_ids/east.txt
 
