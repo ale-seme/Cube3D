@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include "libft.h"
 
+
+#define CARDINALS "NSWE"
+#define ELEMENTS "01"
 // typedef struct game_info
 // {
 // 	int rbgs[2][3];
@@ -14,6 +17,34 @@
 
 	
 // }
+
+typedef struct s_lst
+{
+	char			*map_line;
+	struct s_lst 	*next;
+} t_lst;
+
+typedef struct s_camera
+{
+	int		x;
+	int		y;
+	char	cardinal_point;
+} t_camera;
+
+typedef struct s_game
+{
+	t_lst			*start_list_pointer;
+	t_lst			*start_map_pointer;
+	t_camera		*camera_start_info;
+	char			*texture_nord;
+	char			*texture_south;
+	char			*texture_west;
+	char			*texture_east;
+	char			**floor_rbg;
+	char			**cealing_rbg;
+
+	
+} t_game;
 
 typedef struct s_count
 {
@@ -25,11 +56,6 @@ typedef struct s_count
 	int	count_ceiling;
 }	t_count;
 
-typedef struct s_lst
-{
-	char 			*map_line;
-	struct s_lst 	*next;
-} t_lst;
 
 
 char	*get_next_line(int fd);
