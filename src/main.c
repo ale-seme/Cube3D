@@ -277,6 +277,10 @@ int	check_elements_and_get_info(t_game *game)
 int	check_adapt_and_copy_map(t_game *game)
 {
 	int	i;
+	t_lst *list_map_line;
+
+	list_map_line = game->start_map_pointer;
+
 
 	game->camera_start_info = malloc(sizeof(t_camera)); //maybe I should do this before as well
 	if (!game->camera_start_info)
@@ -285,26 +289,33 @@ int	check_adapt_and_copy_map(t_game *game)
 		return (0);
 
 
-	game->working_map = malloc(sizeof(char **));
+	game->working_map = malloc(sizeof(char *) * (game->n_rows + 1));
 	if (!game->working_map)
 		return(printf("Error in malloc 2D array\n"), 0);
 	i = -1;
-	while(++i <= game->n_rows)
+	while(++i < game->n_rows)
 	{
 		game->working_map[i] = malloc(sizeof(char) * (game->n_columns + 1));
 		if (!game->working_map[i])
 			return (printf("Error in malloc a single line of 2D array\n"), 0);
+		game->working_map[i][game->n_columns] = '0';
 	}
 	game->working_map[i] = NULL;
 	i = 0;
-	//int x = 0;
+	int r;
 	while(game->working_map[i])
 	{
-		ft_memset(game->working_map[i], '0', game->n_columns - 1);
+		ft_memset(game->working_map[i], '2', game->n_columns -1);
+		r = 0;
+		while(list_map_line->map_line[r])
+		{
+			game->working_map[i][r] = list_map_line->map_line[r];
+			r++;
+		}
+		list_map_line = list_map_line->next;
 		i++;
 	}
-	//while(game->working_map[i])
-	return(1);
+	return (1);
 }
 
 int main(int argc, char **argv)
@@ -338,7 +349,12 @@ int main(int argc, char **argv)
 	check_adapt_and_copy_map(&game);
 	
 	printf("number of cols: %d\nnumber of rows %d\n", game.n_columns, game.n_rows);
-	printf("camera orientation is: %c and position x: %d and positoin y: %d", game.camera_start_info->cardinal_point, game.camera_start_info->x, game.camera_start_info->y);
+	printf("camera orientation is: %c and position x: %d and positoin y: %d\n", game.camera_start_info->cardinal_point, game.camera_start_info->x, game.camera_start_info->y);
+	// while(list)
+	// {
+	// 	printf("%s\n", list->map_line);
+	// 	list = list->next;
+	// }
 	int x = -1;
 	while(game.working_map[++x])
 	{
