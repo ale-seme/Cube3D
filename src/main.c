@@ -298,7 +298,7 @@ int	check_adapt_and_copy_map(t_game *game)
 		game->working_map[i] = malloc(sizeof(char) * (game->n_columns + 1));
 		if (!game->working_map[i])
 			return (printf("Error in malloc a single line of 2D array\n"), 0);
-		game->working_map[i][game->n_columns] = '0';
+		game->working_map[i][game->n_columns] = '\0';
 	}
 	game->working_map[i] = NULL;
 	i = 0;
@@ -312,6 +312,8 @@ int	check_adapt_and_copy_map(t_game *game)
 			game->working_map[i][r] = list_map_line->map_line[r];
 			r++;
 		}
+		printf("%s\n", game->working_map[i]);
+
 		list_map_line = list_map_line->next;
 		i++;
 	}
@@ -358,7 +360,8 @@ int main(int argc, char **argv)
 	int x = -1;
 	while(game.working_map[++x])
 	{
-		printf("%s\n", game.working_map[x]);
+		
+		printf("%zu\n", ft_strlen(game.working_map[x]));
 	}
     close(fd);
     return (0);
