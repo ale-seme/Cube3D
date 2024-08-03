@@ -264,41 +264,47 @@ int	check_elements_and_get_info(t_game *game)
 				game->camera_start_info->y = game->n_rows; //could seem confusing but n_rows is updated line by line
 			}
 			else
-				return(printf("the map contains an element that is not allowed\n"), 0);
-			if (i > game->n_columns)
-				game->n_columns = i;
-		} 
-		lst = lst->next;
+				return(printf("the map contains an element that is not allowed, or not allowed more than once\n"), 0);
+		}
+		if (i > game->n_columns)
+			game->n_columns = i;
 		game->n_rows++;
+		lst = lst->next;
 	}
 	return (1);
 }
 
 int	check_adapt_and_copy_map(t_game *game)
 {
-	t_camera *camera_info;
 	int	i;
 
-	i = 0;
-	camera_info = malloc(sizeof(t_camera)); //maybe I should do this before as well
-	if (!camera_info)
+	game->camera_start_info = malloc(sizeof(t_camera)); //maybe I should do this before as well
+	if (!game->camera_start_info)
 		return (printf("error in malloching camera info\n"), 0);
-	game->camera_start_info = camera_info;
 	if (!check_elements_and_get_info(game))
-		return (printf("The given map contains an elemenent that is not allowed for the game\n"), 0);
+		return (0);
+
+
 	game->working_map = malloc(sizeof(char **));
 	if (!game->working_map)
 		return(printf("Error in malloc 2D array\n"), 0);
-	while(i++ < game->n_rows + 2)
+	i = -1;
+	while(++i <= game->n_rows)
 	{
 		game->working_map[i] = malloc(sizeof(char) * (game->n_columns + 1));
 		if (!game->working_map[i])
 			return (printf("Error in malloc a single line of 2D array\n"), 0);
 	}
+	game->working_map[i] = NULL;
 	i = 0;
-	
+	//int x = 0;
+	while(game->working_map[i])
+	{
+		ft_memset(game->working_map[i], '0', game->n_columns - 1);
+		i++;
+	}
+	//while(game->working_map[i])
 	return(1);
-
 }
 
 int main(int argc, char **argv)
@@ -330,10 +336,13 @@ int main(int argc, char **argv)
 	game.start_list_pointer = list;
 	check_ids_and_get_map_start(list, &game);
 	check_adapt_and_copy_map(&game);
-	while(list)
+	
+	printf("number of cols: %d\nnumber of rows %d\n", game.n_columns, game.n_rows);
+	printf("camera orientation is: %c and position x: %d and positoin y: %d", game.camera_start_info->cardinal_point, game.camera_start_info->x, game.camera_start_info->y);
+	int x = -1;
+	while(game.working_map[++x])
 	{
-		printf("%s\n", list->map_line);
-		list = list->next;
+		printf("%s\n", game.working_map[x]);
 	}
     close(fd);
     return (0);
