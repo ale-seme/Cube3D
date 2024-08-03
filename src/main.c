@@ -237,23 +237,66 @@ int	good_argument(int argc, char** argv)
 	
 }
 
+int	check_elements_and_get_info(t_game *game)
+{
+	t_lst *lst;
+	int i;
+	bool	got_cardinal = false;
+
+	game->n_rows = 0; //for now here but i should do before 
+	game->n_columns = 0; //for now here but I should do before
+	lst = game->start_map_pointer;
+	while(game && lst) //probably i don't need to check game hiihh
+	{
+		i = -1;
+		while(lst->map_line[++i])
+		{
+			if (ft_strchr(ELEMENTS, lst->map_line[i]))
+			{
+				if (lst->map_line[i] == ' ')
+					lst->map_line[i] = '2';
+			}
+			else if (ft_strchr(CARDINALS, lst->map_line[i]) && !got_cardinal)
+			{
+				got_cardinal = true;
+				game->camera_start_info->cardinal_point = lst->map_line[i];
+				game->camera_start_info->x = i;
+				game->camera_start_info->y = game->n_rows; //could seem confusing but n_rows is updated line by line
+			}
+			else
+				return(printf("the map contains an element that is not allowed\n"), 0);
+			if (i > game->n_columns)
+				game->n_columns = i;
+		} 
+		lst = lst->next;
+		game->n_rows++;
+	}
+	return (1);
+}
+
 int	check_adapt_and_copy_map(t_game *game)
 {
-	t_list *map_beginning;
 	t_camera *camera_info;
-	int		n_rows;
-	int		n_columns;
+	int	i;
 
-	
-	map_beginning = game->start_map_pointer;
-	camera_info = malloc(sizeof(t_camera));
+	i = 0;
+	camera_info = malloc(sizeof(t_camera)); //maybe I should do this before as well
 	if (!camera_info)
 		return (printf("error in malloching camera info\n"), 0);
+	game->camera_start_info = camera_info;
+	if (!check_elements_and_get_info(game))
+		return (printf("The given map contains an elemenent that is not allowed for the game\n"), 0);
+	game->working_map = malloc(sizeof(char **));
+	if (!game->working_map)
+		return(printf("Error in malloc 2D array\n"), 0);
+	while(i++ < game->n_rows + 2)
+	{
+		game->working_map[i] = malloc(sizeof(char) * (game->n_columns + 1));
+		if (!game->working_map[i])
+			return (printf("Error in malloc a single line of 2D array\n"), 0);
+	}
+	i = 0;
 	
-	// while(map_beginning)
-	// {
-	// 	if (str)
-	// }
 	return(1);
 
 }
@@ -287,6 +330,11 @@ int main(int argc, char **argv)
 	game.start_list_pointer = list;
 	check_ids_and_get_map_start(list, &game);
 	check_adapt_and_copy_map(&game);
+	while(list)
+	{
+		printf("%s\n", list->map_line);
+		list = list->next;
+	}
     close(fd);
     return (0);
 }

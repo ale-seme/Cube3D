@@ -4,10 +4,10 @@
 #include <unistd.h>
 #include <stdio.h>
 #include "libft.h"
-
+#include "stdbool.h"
 
 #define CARDINALS "NSWE"
-#define ELEMENTS "01"
+#define ELEMENTS "01 "
 // typedef struct game_info
 // {
 // 	int rbgs[2][3];
@@ -40,8 +40,11 @@ typedef struct s_game
 	char			*texture_south;
 	char			*texture_west;
 	char			*texture_east;
-	char			**floor_rbg;
-	char			**cealing_rbg;
+	char			**floor_rbg; //if i use atoi already I will do a int pointer
+	char			**cealing_rbg; //same here array of integers maybe instead of char **
+	int				n_rows;
+	int				n_columns;
+	char**			working_map;
 
 	
 } t_game;
