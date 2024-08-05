@@ -53,7 +53,6 @@ int	check_and_atoi(char *str)
 		return (0);
 	while((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
 		i++;
-	printf("current value of i after skipping the spaces %d and current content of the string: %s\n", i, str);
 	if (!str[i])
 		return(printf("Error: one of the rbgs is empty or contains only spaces\n"), -1);
 	while(str[i])
@@ -180,7 +179,7 @@ int	check_ids_amount(t_count *n_ids)
 {
 	//printf("%d%d%d%d%d%d\n", n_ids->count_nord, n_ids->count_south, n_ids->count_west, n_ids->count_east, n_ids->count_floor, n_ids->count_ceiling);
 	if (n_ids->count_ceiling != 1 || n_ids->count_east != 1 || n_ids->count_floor != 1 \
-	|| n_ids->count_nord != 1 || n_ids->count_nord != 1 || n_ids->count_south != 1 \
+	|| n_ids->count_nord != 1 || n_ids->count_south != 1 \
 	|| n_ids->count_west != 1)
 		return (0);
 	return (1);
@@ -321,6 +320,38 @@ int	check_adapt_and_copy_map(t_game *game)
 	return (1);
 }
 
+int	map_enclosed_by_walls(t_game *game)
+{
+	int	y;
+	int	x;
+
+	y = 0;
+	x = 0;
+	while(game->working_map[y])
+	{
+		x = 0;
+		while (game->working_map[y][x])
+		{
+			if ((x == 0 || (x == game->n_columns -1) || y == 0 \
+			|| (y == game->n_rows -1)) && (game->working_map[y][x] == '0'))
+			{
+				printf("here\n");
+				return(printf("the map is NOT sourrounded by walls\n"), 0);
+			}
+			else
+				if (game->working_map[y][x] == '0' && (game->working_map[y][x -1] != '1' \
+				|| game->working_map[y][x + 1] != '1' \
+				|| game->working_map[y - 1][x] != '1' \
+				|| game->working_map[y + 1][x] != '1'))
+				return(printf("Error: the map is not sourrounded by walls\n"), 0);
+			x++;
+		}
+		printf("%s\n", game->working_map[y]);
+		y++;
+	}
+	return(1);
+}
+
 int main(int argc, char **argv)
 {
 	
@@ -350,7 +381,12 @@ int main(int argc, char **argv)
 	game.start_list_pointer = list;
 	if (!check_ids_and_get_map_start(list, &game))
 		return (1);
-	check_adapt_and_copy_map(&game);
+	if (!check_adapt_and_copy_map(&game))
+		return (1);
+	if (!map_enclosed_by_walls(&game))
+	{
+		return (1);
+	}
 	
 	//printf("number of cols: %d\nnumber of rows %d\n", game.n_columns, game.n_rows);
 	//printf("camera orientation is: %c and position x: %d and positoin y: %d\n", game.camera_start_info->cardinal_point, game.camera_start_info->x, game.camera_start_info->y);
