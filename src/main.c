@@ -51,8 +51,11 @@ int	check_and_atoi(char *str)
 	number = 0;
 	if (!str)
 		return (0);
-	while(str[i] >= 9 && str[i] <= 13)
+	while((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
 		i++;
+	printf("current value of i after skipping the spaces %d and current content of the string: %s\n", i, str);
+	if (!str[i])
+		return(printf("Error: one of the rbgs is empty or contains only spaces\n"), -1);
 	while(str[i])
 	{
 		if (!(str[i] >= '0' && str[i] <= '9'))
@@ -60,7 +63,7 @@ int	check_and_atoi(char *str)
 			printf("only digit after spaces as RBG codes\n");
 			return (-1);
 		}
-		if (number > (255 - (number + str[i] - '0') / 10))
+		if (number > (255 - (number + str[i] - '0')) / 10)
 		{
 			printf("number given as RBG parameter should be max 255\n");
 			return (-1);
@@ -292,6 +295,7 @@ int	check_adapt_and_copy_map(t_game *game)
 	game->working_map = malloc(sizeof(char *) * (game->n_rows + 1));
 	if (!game->working_map)
 		return(printf("Error in malloc 2D array\n"), 0);
+	game->working_map[game->n_rows] = NULL;
 	i = -1;
 	while(++i < game->n_rows)
 	{
@@ -300,20 +304,17 @@ int	check_adapt_and_copy_map(t_game *game)
 			return (printf("Error in malloc a single line of 2D array\n"), 0);
 		game->working_map[i][game->n_columns] = '\0';
 	}
-	game->working_map[i] = NULL;
 	i = 0;
 	int r;
 	while(game->working_map[i])
 	{
-		ft_memset(game->working_map[i], '2', game->n_columns -1);
+		ft_memset(game->working_map[i], '2', game->n_columns);
 		r = 0;
 		while(list_map_line->map_line[r])
 		{
 			game->working_map[i][r] = list_map_line->map_line[r];
 			r++;
 		}
-		printf("%s\n", game->working_map[i]);
-
 		list_map_line = list_map_line->next;
 		i++;
 	}
@@ -347,22 +348,19 @@ int main(int argc, char **argv)
         free (line);
     }
 	game.start_list_pointer = list;
-	check_ids_and_get_map_start(list, &game);
+	if (!check_ids_and_get_map_start(list, &game))
+		return (1);
 	check_adapt_and_copy_map(&game);
 	
-	printf("number of cols: %d\nnumber of rows %d\n", game.n_columns, game.n_rows);
-	printf("camera orientation is: %c and position x: %d and positoin y: %d\n", game.camera_start_info->cardinal_point, game.camera_start_info->x, game.camera_start_info->y);
-	// while(list)
+	//printf("number of cols: %d\nnumber of rows %d\n", game.n_columns, game.n_rows);
+	//printf("camera orientation is: %c and position x: %d and positoin y: %d\n", game.camera_start_info->cardinal_point, game.camera_start_info->x, game.camera_start_info->y);
+
+	// int x = -1;
+	// while(game.working_map[++x])
 	// {
-	// 	printf("%s\n", list->map_line);
-	// 	list = list->next;
-	// }
-	int x = -1;
-	while(game.working_map[++x])
-	{
 		
-		printf("%zu\n", ft_strlen(game.working_map[x]));
-	}
+	// 	printf("%s\n", game.working_map[x]);
+	// }
     close(fd);
     return (0);
 }
