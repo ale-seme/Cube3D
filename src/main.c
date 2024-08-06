@@ -19,12 +19,16 @@ void	remove_newline(char line[])
 }
 
 
-void	add_new_node(char *line, t_lst **list)
+int	add_new_node(char *line, t_lst **list)
 {
 
 	t_lst *current;
+	t_lst *new_node;
+	
+	new_node = malloc(sizeof(t_lst));
+	if (!new_node)
+		return(printf("Error in malloc new node\n"), 0);
 
-	t_lst *new_node = malloc(sizeof(t_lst));
 	new_node->map_line = ft_strdup(line);
 	new_node->next = NULL;
 	if (list != NULL)
@@ -39,7 +43,7 @@ void	add_new_node(char *line, t_lst **list)
 			current->next = new_node;
 		}
 	}
-
+	return(1);
 }
 //need to double check with inputs that are 002 or 00000004
 int	check_and_atoi(char *str)
@@ -177,7 +181,6 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 
 int	check_ids_amount(t_count *n_ids)
 {
-	//printf("%d%d%d%d%d%d\n", n_ids->count_nord, n_ids->count_south, n_ids->count_west, n_ids->count_east, n_ids->count_floor, n_ids->count_ceiling);
 	if (n_ids->count_ceiling != 1 || n_ids->count_east != 1 || n_ids->count_floor != 1 \
 	|| n_ids->count_nord != 1 || n_ids->count_south != 1 \
 	|| n_ids->count_west != 1)
@@ -185,21 +188,37 @@ int	check_ids_amount(t_count *n_ids)
 	return (1);
 }
 
+void	initialize_count(t_count *n_ids)
+{
+	n_ids->count_nord = 0;
+	n_ids->count_south = 0;
+	n_ids->count_west = 0;
+	n_ids->count_east = 0;
+	n_ids->count_floor = 0;
+	n_ids->count_ceiling = 0;
+}
+int	skip_empty_lines(t_lst **list)
+{
+	if ((*list)->map_line[0] == '\n' || (*list)->map_line[0] == '\0')
+	{
+		*list = (*list)->next;
+		if (!(*list))
+			return (0);
+		return(1) ;
+
+}
+
+
 int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 {
 	t_count n_ids;
 
-	n_ids.count_nord = 0;
-	n_ids.count_south = 0;
-	n_ids.count_west = 0;
-	n_ids.count_east = 0;
-	n_ids.count_floor = 0;
-	n_ids.count_ceiling = 0;
-
+	initialize_count(&n_ids);
 	if (!list)
-		return (0);
+		return (0); //i keep for now but probably I can get rid of this one
 	while(list)
 	{
+		skip_empty_lines(&list);
 		if (list->map_line[0] == '\n' || list->map_line[0] == '\0')
 		{
 			list = list->next;
@@ -214,10 +233,7 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 			break ;
 	}
 	if (!check_ids_amount(&n_ids)) //could also check if (!list)
-	{
-		printf("Error with the identifiers given in the map file\n");
-		return (0);
-	}
+		return(printf("Error with the identifiers given in the map file\n"), 0);
 	while(list && (list->map_line[0] == '\n' || list->map_line[0] == '\0'))
 		list = list->next;
 	if (!list)
@@ -250,6 +266,8 @@ int	check_elements_and_get_info(t_game *game)
 	lst = game->start_map_pointer;
 	while(game && lst) //probably i don't need to check game hiihh
 	{
+		if (!lst->next && lst->map_line[0] == '\0')
+			return (printf("Ending a map with multiple new lines is not allowed\n"), 0); //check with a peer 
 		i = -1;
 		while(lst->map_line[++i])
 		{
@@ -339,11 +357,11 @@ int	map_enclosed_by_walls(t_game *game)
 				return(printf("the map is NOT sourrounded by walls\n"), 0);
 			}
 			else
-				if (game->working_map[y][x] == '0' && (game->working_map[y][x -1] != '1' \
-				|| game->working_map[y][x + 1] != '1' \
-				|| game->working_map[y - 1][x] != '1' \
-				|| game->working_map[y + 1][x] != '1'))
-				return(printf("Error: the map is not sourrounded by walls\n"), 0);
+				if (game->working_map[y][x] == '0' && (game->working_map[y][x -1] == '2' \
+				|| game->working_map[y][x + 1] == '2' \
+				|| game->working_map[y - 1][x] == '2' \
+				|| game->working_map[y + 1][x] == '2'))
+					return(printf("Error: the map is not sourrounded by walls. y: %d, x: %d\n", y, x), 0);
 			x++;
 		}
 		printf("%s\n", game->working_map[y]);
@@ -352,51 +370,42 @@ int	map_enclosed_by_walls(t_game *game)
 	return(1);
 }
 
+int	successfull_parsing(int argc, char **argv, t_game *game)
+{
+	int	n_lines;
+	int fd;
+
+	n_lines = 0;
+	if (!good_argument(argc, argv))
+		return(0);
+	fd = open(argv[1], O_RDONLY, 0777);
+	if (fd == -1)
+		return(printf("Error in opening the map\n"), 0);
+	while (1)
+	{
+		char * line = get_next_line(fd);
+		if (line == NULL)
+			break ;
+		n_lines++;
+		remove_newline(line);
+		if (!add_new_node(line, &game->start_list_pointer))
+			return (free(line), 0);
+		free(line);
+	}
+	if (!check_ids_and_get_map_start(game->start_list_pointer, game) || \
+		!check_adapt_and_copy_map(game) || !map_enclosed_by_walls(game))
+		return (0);
+	close(fd);
+	return (1);
+}
+
 int main(int argc, char **argv)
 {
 	
-    t_lst *list = NULL;
 	t_game game;
+	game.start_list_pointer = NULL;
 
-	if (!good_argument(argc, argv))
-		return(1);
-	
-	int	n_lines = 0;
-	int fd = open(argv[1], O_RDONLY, 0777);
-	if (fd == -1)
-	{
-		printf("error in opening the map\n");
+	if (!successfull_parsing(argc, argv, &game))
 		return (1);
-	}
-    while (1)
-    {
-        char * line = get_next_line(fd);
-        if (line == NULL)
-            break ;
-		n_lines++;
-		remove_newline(line);
-		add_new_node(line, &list);
-        free (line);
-    }
-	game.start_list_pointer = list;
-	if (!check_ids_and_get_map_start(list, &game))
-		return (1);
-	if (!check_adapt_and_copy_map(&game))
-		return (1);
-	if (!map_enclosed_by_walls(&game))
-	{
-		return (1);
-	}
-	
-	//printf("number of cols: %d\nnumber of rows %d\n", game.n_columns, game.n_rows);
-	//printf("camera orientation is: %c and position x: %d and positoin y: %d\n", game.camera_start_info->cardinal_point, game.camera_start_info->x, game.camera_start_info->y);
-
-	// int x = -1;
-	// while(game.working_map[++x])
-	// {
-		
-	// 	printf("%s\n", game.working_map[x]);
-	// }
-    close(fd);
-    return (0);
+	return (0);
 }
