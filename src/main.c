@@ -94,7 +94,6 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 	int texture_fd;
 	int i;
 
-	//flag = 0;
 	if (!ft_strncmp(line, "NO ", 3))
 	{
 		n_ids->count_nord++;
@@ -197,16 +196,6 @@ void	initialize_count(t_count *n_ids)
 	n_ids->count_floor = 0;
 	n_ids->count_ceiling = 0;
 }
-int	skip_empty_lines(t_lst **list)
-{
-	if ((*list)->map_line[0] == '\n' || (*list)->map_line[0] == '\0')
-	{
-		*list = (*list)->next;
-		if (!(*list))
-			return (0);
-		return(1) ;
-
-}
 
 
 int	check_ids_and_get_map_start(t_lst *list, t_game *game)
@@ -218,14 +207,10 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 		return (0); //i keep for now but probably I can get rid of this one
 	while(list)
 	{
-		skip_empty_lines(&list);
-		if (list->map_line[0] == '\n' || list->map_line[0] == '\0')
-		{
+		while(list && (list->map_line[0] == '\n' || list->map_line[0] == '\0'))
 			list = list->next;
-			if (!list)
-				break ;
-			continue ;
-		}
+		if (!list)
+			break ;
 		if (!check_ids_and_info(list->map_line, &n_ids, game))
 			return (0);
 		list = list->next;
