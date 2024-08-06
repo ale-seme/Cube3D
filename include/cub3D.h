@@ -31,10 +31,21 @@ typedef struct s_camera
 	char	cardinal_point;
 } t_camera;
 
+typedef struct s_count
+{
+	int	count_nord;
+	int	count_south;
+	int	count_west;
+	int	count_east;
+	int	count_floor;
+	int	count_ceiling;
+}	t_count;
+
 typedef struct s_game
 {
 	t_lst			*start_list_pointer;
 	t_lst			*start_map_pointer;
+	t_count			n_ids;
 	t_camera		*camera_start_info;
 	char			*texture_nord;
 	char			*texture_south;
@@ -49,18 +60,9 @@ typedef struct s_game
 	
 } t_game;
 
-typedef struct s_count
-{
-	int	count_nord;
-	int	count_south;
-	int	count_west;
-	int	count_east;
-	int	count_floor;
-	int	count_ceiling;
-}	t_count;
 
 
-
+int		identifier_and_texture(char *line, char *idf, t_count *n_ids, t_game *game);
 char	*get_next_line(int fd);
 
 #endif

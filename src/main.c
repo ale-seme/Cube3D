@@ -91,56 +91,26 @@ int	right_amount(char **ss)
 
 int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 {
-	int texture_fd;
 	int i;
 
 	if (!ft_strncmp(line, "NO ", 3))
 	{
-		n_ids->count_nord++;
-		texture_fd = open(line + 3, O_RDONLY, 0777);
-		if (texture_fd == -1)
-		{
-			printf("identifier nord has a texture with invalid path or permissions\n");
+		if (!increment_and_check(line, n_ids->count_nord, game))
 			return (0);
-		}
-		game->texture_nord = line + 3;
-		close(texture_fd);
 	}
 	else if (!ft_strncmp(line, "SO ", 3))
 	{
-		n_ids->count_south++;
-		texture_fd = open(line + 3, O_RDONLY, 0777);
-		if (texture_fd == -1)
-		{
-			printf("identifier south has a texture with invalid path or permissions\n");
+		if (!increment_and_check(line, n_ids->count_south, game))
 			return (0);
-		}
-		game->texture_south = line + 3;
-		close(texture_fd);
 	}
 	else if (!ft_strncmp(line, "WE ", 3))
 	{
-		n_ids->count_west++;
-		texture_fd = open(line + 3, O_RDONLY, 0777);
-		if (texture_fd == -1)
-		{
-			printf("identifier west has a texture with invalid path or permissions\n");
+		if (!increment_and_check(line, n_ids->count_west, game))
 			return (0);
-		}
-		game->texture_west = line + 3;
-		close(texture_fd);
 	}
 	else if (!ft_strncmp(line, "EA ", 3))
 	{
-		n_ids->count_east++;
-		texture_fd = open(line + 3, O_RDONLY, 0777);
-		if (texture_fd == -1)
-		{
-			printf("identifier east has a texture with invalid path or permissions\n");
-			return (0);
-		}
-		game->texture_east = line + 3;
-		close(texture_fd);
+		if (!increment_and_)
 	}
 	else if (!ft_strncmp(line, "F ", 2))
 	{
