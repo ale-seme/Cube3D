@@ -6,7 +6,7 @@ LINKS =
 
 INCLUDES = -I./libft -I./include
 
-SRC = test.c main.c get_next_line.c
+SRC = test.c main.c get_next_line.c check_identifiers.c
 
 DIR_SRC = src
 

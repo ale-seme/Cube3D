@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "libft.h"
 #include "stdbool.h"
+#include  "fcntl.h"
 
 #define CARDINALS "NSWE"
 #define ELEMENTS "01 "
@@ -33,19 +34,19 @@ typedef struct s_camera
 
 typedef struct s_count
 {
-	int	count_nord;
-	int	count_south;
-	int	count_west;
-	int	count_east;
-	int	count_floor;
-	int	count_ceiling;
+	int		count_nord;
+	int		count_south;
+	int		count_west;
+	int		count_east;
+	int		count_floor;
+	int		count_ceiling;
 }	t_count;
 
 typedef struct s_game
 {
 	t_lst			*start_list_pointer;
 	t_lst			*start_map_pointer;
-	t_count			n_ids;
+	t_count			*n_ids;
 	t_camera		*camera_start_info;
 	char			*texture_nord;
 	char			*texture_south;
@@ -56,13 +57,14 @@ typedef struct s_game
 	int				n_rows;
 	int				n_columns;
 	char**			working_map;
+	bool			utility_bool;
 
 	
 } t_game;
 
 
 
-int		identifier_and_texture(char *line, char *idf, t_count *n_ids, t_game *game);
+int	compare_check_and_inc(char *line, int n_id, t_game *game);
 char	*get_next_line(int fd);
 
 #endif

@@ -92,27 +92,29 @@ int	right_amount(char **ss)
 int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 {
 	int i;
+	int	x;
+	char *cardinals[4];
 
-	if (!ft_strncmp(line, "NO ", 3))
+	x = -1;
+	game->utility_bool = false;
+
+	cardinals[0] = "NO";
+	cardinals[1] = "SO";
+	cardinals[2] = "WE";
+	cardinals[3] = "EA";
+
+	//printf("%s\n", cardinals[0]);
+	printf("currently checkiung line %s\n", line);
+	while(++x < 4)
 	{
-		if (!increment_and_check(line, n_ids->count_nord, game))
-			return (0);
+		if (!ft_strncmp(line, cardinals[x], 2))
+		{
+			if (!compare_check_and_inc(line, x, game))
+				return (0);
+			return (1);
+		}
 	}
-	else if (!ft_strncmp(line, "SO ", 3))
-	{
-		if (!increment_and_check(line, n_ids->count_south, game))
-			return (0);
-	}
-	else if (!ft_strncmp(line, "WE ", 3))
-	{
-		if (!increment_and_check(line, n_ids->count_west, game))
-			return (0);
-	}
-	else if (!ft_strncmp(line, "EA ", 3))
-	{
-		if (!increment_and_)
-	}
-	else if (!ft_strncmp(line, "F ", 2))
+	if (!ft_strncmp(line, "F ", 2))
 	{
 		n_ids->count_floor++;
 		game->floor_rbg = ft_split(line + 2, ',');
@@ -144,12 +146,16 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 			i++;
 		}
 	}
+	else if (!line || (line[0] && line[0] != '\n')) //i'm converting all the newlines into null terms so idk
+		return(printf("Error, presence of a usless char before the map"), 0);
+	game->utility_bool = false;
 	return (1);
 
 }
 
 int	check_ids_amount(t_count *n_ids)
 {
+	printf("COUNT OF NORTH : %d\n", n_ids->count_nord);
 	if (n_ids->count_ceiling != 1 || n_ids->count_east != 1 || n_ids->count_floor != 1 \
 	|| n_ids->count_nord != 1 || n_ids->count_south != 1 \
 	|| n_ids->count_west != 1)
