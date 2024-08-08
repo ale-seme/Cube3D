@@ -96,15 +96,11 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 	char *cardinals[4];
 
 	x = -1;
-	game->utility_bool = false;
-
 	cardinals[0] = "NO";
 	cardinals[1] = "SO";
 	cardinals[2] = "WE";
 	cardinals[3] = "EA";
 
-	//printf("%s\n", cardinals[0]);
-	printf("currently checkiung line %s\n", line);
 	while(++x < 4)
 	{
 		if (!ft_strncmp(line, cardinals[x], 2))
@@ -119,7 +115,7 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 		n_ids->count_floor++;
 		game->floor_rbg = ft_split(line + 2, ',');
 		if (!game->floor_rbg)
-			return (printf("error in split \n"), 0);
+			return (printf("Error in split \n"), 0);
 		if (!right_amount(game->floor_rbg))
 			return (printf("The program accepts 3 and only 3 RBGs in the mapfile\n"), 0);
 		i = 0;
@@ -179,6 +175,7 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 	t_count n_ids;
 
 	initialize_count(&n_ids);
+	game->n_ids = &n_ids;
 	if (!list)
 		return (0); //i keep for now but probably I can get rid of this one
 	while(list)

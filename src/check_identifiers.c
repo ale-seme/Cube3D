@@ -8,13 +8,13 @@ int	ft_isspace(char c)
 void	increment_id_count(t_game *game, int n_id)
 {
 	if (n_id == 0)
-		 game->n_ids.count_nord++;
+		 game->n_ids->count_nord++;
 	else if (n_id == 1)
-		game->texture_south++;
+		game->n_ids->count_south++;
 	else if (n_id == 2)
-		game->texture_west++;
+		game->n_ids->count_west++;
 	else if (n_id == 3)
-		game->texture_east++;
+		game->n_ids->count_east++;
 }
 
 int	compare_check_and_inc(char *line, int n_id, t_game *game)
