@@ -89,6 +89,14 @@ int	right_amount(char **ss)
 	return (i == 3);
 }
 
+void	populate_cardinals(char *cardinals)
+{
+	cardinals[0] = "NO";
+	cardinals[1] = "SO";
+	cardinals[2] = "WE";
+	cardinals[3] = "EA";
+}
+
 int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 {
 	int i;
@@ -96,16 +104,12 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 	char *cardinals[4];
 
 	x = -1;
-	cardinals[0] = "NO";
-	cardinals[1] = "SO";
-	cardinals[2] = "WE";
-	cardinals[3] = "EA";
-
+	populate_cardinals(cardinals);
 	while(++x < 4)
 	{
 		if (!ft_strncmp(line, cardinals[x], 2))
 		{
-			if (!compare_check_and_inc(line, x, game))
+			if (!check_and_store_texture(line, x, game))
 				return (0);
 			return (1);
 		}

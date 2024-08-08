@@ -17,7 +17,7 @@ void	increment_id_count(t_game *game, int n_id)
 		game->n_ids->count_east++;
 }
 
-int	compare_check_and_inc(char *line, int n_id, t_game *game)
+int	check_and_store_texture(char *line, int n_id, t_game *game)
 {
 	int	texture_fd;
 	char *temp;
@@ -38,3 +38,5 @@ int	compare_check_and_inc(char *line, int n_id, t_game *game)
 	close(texture_fd);
 	return (1);
 }
+
+int	check_convert_and_store_rbgs(char *line, t_game *game, )
