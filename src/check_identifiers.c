@@ -21,7 +21,17 @@ void	increment_id_count(t_game *game, int n_id)
 		game->n_ids->count_ceiling++;
 }
 
-
+void store_id_texture(t_game *game, int n_id, char *texture)
+{
+	if (n_id == 0)
+		game->texture_nord = texture;
+	else if (n_id == 1)
+		game->texture_south = texture;
+	else if (n_id == 2)
+		game->texture_west = texture;
+	else if (n_id == 3)
+		game->texture_east = texture;
+}
 
 int	check_and_store_texture(char *line, int n_id, t_game *game)
 {
@@ -40,7 +50,7 @@ int	check_and_store_texture(char *line, int n_id, t_game *game)
 		printf("An identifier has a texture with invalid path or permissions\n");
 		return (0);
 	}
-	game->texture_nord = line + 2;
+	store_id_texture(game, n_id, temp);
 	close(texture_fd);
 	return (1);
 }
