@@ -63,9 +63,14 @@ typedef struct s_game
 } t_game;
 
 
+/*parsing map management*/
+void	convert_spaces_and_copy_map(t_game *game, t_lst *temp);
 
+/*identifiers management*/
 int		check_convert_and_store_rbgs(char *line, int n_id, t_game *game);
 int		check_and_store_texture(char *line, int n_id, t_game *game);
+
+/*parsing funcitons*/
 char	*get_next_line(int fd);
 int		check_and_atoi(char *str);
 

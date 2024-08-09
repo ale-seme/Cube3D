@@ -222,18 +222,14 @@ int	check_elements_and_get_info(t_game *game)
 int	check_adapt_and_copy_map(t_game *game)
 {
 	int	i;
-	t_lst *list_map_line;
+	t_lst *temp;
 
-	list_map_line = game->start_map_pointer;
-
-
+	temp = game->start_map_pointer;
 	game->camera_start_info = malloc(sizeof(t_camera)); //maybe I should do this before as well
 	if (!game->camera_start_info)
-		return (printf("error in malloching camera info\n"), 0);
+		return (printf("error in malloc camera info\n"), 0);
 	if (!check_elements_and_get_info(game))
 		return (0);
-
-
 	game->working_map = malloc(sizeof(char *) * (game->n_rows + 1));
 	if (!game->working_map)
 		return(printf("Error in malloc 2D array\n"), 0);
@@ -246,20 +242,7 @@ int	check_adapt_and_copy_map(t_game *game)
 			return (printf("Error in malloc a single line of 2D array\n"), 0);
 		game->working_map[i][game->n_columns] = '\0';
 	}
-	i = 0;
-	int r;
-	while(game->working_map[i])
-	{
-		ft_memset(game->working_map[i], '2', game->n_columns);
-		r = 0;
-		while(list_map_line->map_line[r])
-		{
-			game->working_map[i][r] = list_map_line->map_line[r];
-			r++;
-		}
-		list_map_line = list_map_line->next;
-		i++;
-	}
+	convert_spaces_and_copy_map(game, temp);
 	return (1);
 }
 
