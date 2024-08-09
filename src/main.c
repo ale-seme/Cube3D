@@ -164,7 +164,6 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 		list = list->next;
 	if (!list)
 		return (printf("Error, reached end of map with not enough info\n"));
-	game->start_map_pointer = list;
 	return (game->start_map_pointer = list, 1);
 }
 
