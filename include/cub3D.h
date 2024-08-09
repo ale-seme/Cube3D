@@ -52,8 +52,8 @@ typedef struct s_game
 	char			*texture_south;
 	char			*texture_west;
 	char			*texture_east;
-	char			**floor_rbg; //if i use atoi already I will do a int pointer
-	char			**cealing_rbg; //same here array of integers maybe instead of char **
+	int				*floor_rbg_array; //if i use atoi already I will do a int pointer
+	int				*cealing_rbg_array; //same here array of integers maybe instead of char **
 	int				n_rows;
 	int				n_columns;
 	char**			working_map;
@@ -64,7 +64,9 @@ typedef struct s_game
 
 
 
-int	compare_check_and_inc(char *line, int n_id, t_game *game);
+int		check_convert_and_store_rbgs(char *line, int n_id, t_game *game);
+int		check_and_store_texture(char *line, int n_id, t_game *game);
 char	*get_next_line(int fd);
+int		check_and_atoi(char *str);
 
 #endif

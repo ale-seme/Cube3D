@@ -28,7 +28,6 @@ int	add_new_node(char *line, t_lst **list)
 	new_node = malloc(sizeof(t_lst));
 	if (!new_node)
 		return(printf("Error in malloc new node\n"), 0);
-
 	new_node->map_line = ft_strdup(line);
 	new_node->next = NULL;
 	if (list != NULL)
@@ -77,19 +76,8 @@ int	check_and_atoi(char *str)
 	return (number);
 }
 
-int	right_amount(char **ss)
-{
-	int	i;
-	
-	i = 0;
-	while(ss[i])
-	{
-		i++;
-	}
-	return (i == 3);
-}
 
-void	populate_cardinals(char *cardinals)
+void	populate_cardinals(char **cardinals)
 {
 	cardinals[0] = "NO";
 	cardinals[1] = "SO";
@@ -97,9 +85,8 @@ void	populate_cardinals(char *cardinals)
 	cardinals[3] = "EA";
 }
 
-int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
+int	check_ids_and_info(char *line, t_game *game)
 {
-	int i;
 	int	x;
 	char *cardinals[4];
 
@@ -114,37 +101,15 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 			return (1);
 		}
 	}
-	if (!ft_strncmp(line, "F ", 2))
+	if (line[0] == 'F')
 	{
-		n_ids->count_floor++;
-		game->floor_rbg = ft_split(line + 2, ',');
-		if (!game->floor_rbg)
-			return (printf("Error in split \n"), 0);
-		if (!right_amount(game->floor_rbg))
-			return (printf("The program accepts 3 and only 3 RBGs in the mapfile\n"), 0);
-		i = 0;
-		while(game->floor_rbg[i])
-		{
-			if (check_and_atoi(game->floor_rbg[i]) < 0)
-				return (0);
-			i++;
-		}
+		if (!check_convert_and_store_rbgs(line, 4, game))
+			return (0);
 	}
-	else if (!ft_strncmp(line, "C ", 2))
+	else if (line[0] == 'C')
 	{
-		n_ids->count_ceiling++;
-		game->cealing_rbg = ft_split(line + 2, ',');
-		if (!game->cealing_rbg)
-			return (printf("error in split \n"), 0);
-		if (!right_amount(game->cealing_rbg))
-			return (printf("The program accepts 3 and only 3 RBGs in the mapfile\n"), 0);
-		i = 0;
-		while(game->cealing_rbg[i])
-		{
-			if (check_and_atoi(game->cealing_rbg[i]) < 0)
-				return (0);
-			i++;
-		}
+		if (!check_convert_and_store_rbgs(line, 5, game))
+			return (0);
 	}
 	else if (!line || (line[0] && line[0] != '\n')) //i'm converting all the newlines into null terms so idk
 		return(printf("Error, presence of a usless char before the map"), 0);
@@ -155,7 +120,6 @@ int	check_ids_and_info(char *line, t_count *n_ids, t_game *game)
 
 int	check_ids_amount(t_count *n_ids)
 {
-	printf("COUNT OF NORTH : %d\n", n_ids->count_nord);
 	if (n_ids->count_ceiling != 1 || n_ids->count_east != 1 || n_ids->count_floor != 1 \
 	|| n_ids->count_nord != 1 || n_ids->count_south != 1 \
 	|| n_ids->count_west != 1)
@@ -188,7 +152,7 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 			list = list->next;
 		if (!list)
 			break ;
-		if (!check_ids_and_info(list->map_line, &n_ids, game))
+		if (!check_ids_and_info(list->map_line, game))
 			return (0);
 		list = list->next;
 		if (check_ids_amount(&n_ids))
@@ -201,7 +165,7 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 	if (!list)
 		return (printf("Error, reached end of map with not enough info\n"));
 	game->start_map_pointer = list;
-	return (1);
+	return (game->start_map_pointer = list, 1);
 }
 
 int	good_argument(int argc, char** argv)
