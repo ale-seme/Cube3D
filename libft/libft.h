@@ -6,7 +6,7 @@
 /*   By: asemerar <asemerar@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/05 13:23:41 by asemerar      #+#    #+#                 */
-/*   Updated: 2024/07/18 12:26:21 by ale           ########   odam.nl         */
+/*   Updated: 2024/08/10 18:28:44 by ale           ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,4 +66,5 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstadd_back(t_list **lst, t_list *new);
+int		ft_isspace(char c);
 #endif

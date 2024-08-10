@@ -1,0 +1,85 @@
+#include "cub3D.h"
+
+static void	remove_newline(char line[])
+{
+	int i;
+
+	i = 0;
+	while(line && line[i])
+	{
+		if (line[i] == '\n')
+		{
+			line[i] = '\0';
+			break ;
+		}
+		i++;
+	}
+}
+
+static int	add_new_node(char *line, t_lst **list)
+{
+
+	t_lst *current;
+	t_lst *new_node;
+	
+	new_node = malloc(sizeof(t_lst));
+	if (!new_node)
+		return(printf("Error in malloc new node\n"), 0);
+	new_node->map_line = ft_strdup(line);
+	new_node->next = NULL;
+	if (list != NULL)
+	{
+		if (*list == (NULL))
+			*list = new_node;
+		else
+		{
+			current = *list;
+			while((current)->next)
+				current = current->next;
+			current->next = new_node;
+		}
+	}
+	return(1);
+}
+
+static int good_argument(int argc, char** argv)
+{
+	int	len;
+
+	if (argc < 2)
+		return (printf("No argv provided\n"), 0);
+	len = ft_strlen(argv[1]);
+	if (len < 4 || argv[1][len -1] != 'b' || argv[1][len -2] != 'u' || argv[1][len - 3] != 'c' || argv[1][len - 4] != '.')
+		return (printf("Error: argv is not .cub file\n"), 0);
+	return (1);
+	
+}
+
+int	successfull_parsing(int argc, char **argv, t_game *game)
+{
+	int	n_lines;
+	int fd;
+
+	n_lines = 0;
+	if (!good_argument(argc, argv))
+		return(0);
+	fd = open(argv[1], O_RDONLY, 0777);
+	if (fd == -1)
+		return(printf("Error in opening the map\n"), 0);
+	while (1)
+	{
+		char * line = get_next_line(fd);
+		if (line == NULL)
+			break ;
+		n_lines++;
+		remove_newline(line);
+		if (!add_new_node(line, &game->start_list_pointer))
+			return (free(line), 0);
+		free(line);
+	}
+	if (!check_ids_and_get_map_start(game->start_list_pointer, game) || \
+		!check_adapt_and_copy_map(game) || !map_enclosed_by_walls(game))
+		return (0);
+	close(fd);
+	return (1);
+}

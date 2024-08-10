@@ -65,13 +65,20 @@ typedef struct s_game
 
 /*parsing map management*/
 void	convert_spaces_and_copy_map(t_game *game, t_lst *temp);
+int		check_adapt_and_copy_map(t_game *game);
+int		map_enclosed_by_walls(t_game *game);
 
-/*identifiers management*/
-int		check_convert_and_store_rbgs(char *line, int n_id, t_game *game);
-int		check_and_store_texture(char *line, int n_id, t_game *game);
+/*parsing_identifiers_functions*/
 
-/*parsing funcitons*/
+
+int	check_ids_and_get_map_start(t_lst *list, t_game *game);
+int	check_ids_and_info(char *line, t_game *game);
+int	manage_floor_cealing_ids_and_usless_char(char *line, t_game *game);
+int	split_store_and_check_rbg_amount(char *temp, int n_id, t_game *game);
+void	increment_id_count(t_game *game, int n_id);
+
+/*general_parsing_funcitons*/
 char	*get_next_line(int fd);
-int		check_and_atoi(char *str);
+int		successfull_parsing(int argc, char **argv, t_game *game);
 
 #endif
