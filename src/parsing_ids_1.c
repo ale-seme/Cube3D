@@ -27,7 +27,7 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 	game->n_ids = &n_ids;
 	if (!list)
 		return (0); //i keep for now but probably I can get rid of this one
-	while(list)
+	while (list)
 	{
 		while(list && (list->map_line[0] == '\n' || list->map_line[0] == '\0'))
 			list = list->next;
@@ -44,6 +44,6 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 	while(list && (list->map_line[0] == '\n' || list->map_line[0] == '\0'))
 		list = list->next;
 	if (!list)
-		return (printf("Error, reached end of map with not enough info\n"));
+		return (printf("Error, reached end of map with not enough info\n"), 0);
 	return (game->start_map_pointer = list, 1);
 }

@@ -57,14 +57,12 @@ typedef struct s_game
 	int				n_rows;
 	int				n_columns;
 	char**			working_map;
-	bool			utility_bool;
 
 	
 } t_game;
 
 
 /*parsing map management*/
-void	convert_spaces_and_copy_map(t_game *game, t_lst *temp);
 int		check_adapt_and_copy_map(t_game *game);
 int		map_enclosed_by_walls(t_game *game);
 

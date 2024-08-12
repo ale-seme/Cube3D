@@ -45,7 +45,9 @@ int	manage_floor_cealing_ids_and_usless_char(char *line, t_game *game)
 		if (!check_convert_and_store_rbgs(line, 5, game))
 			return (0);
 	}
-	else if (!line || (line[0] && line[0] != '\n')) //i'm converting all the newlines into null terms so idk
+	else if (!line || (line[0] && line[0] != '\n'))
+	{
 		return(printf("Error, presence of a usless char before the map"), 0);
+	} //i'm converting all the newlines into null terms so idk
 	return (1);
 }
