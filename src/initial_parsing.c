@@ -45,33 +45,37 @@ static int	add_new_node(char *line, t_lst **list)
 static int good_argument(int argc, char** argv)
 {
 	int	len;
+	int	temp_fd;
 
 	if (argc < 2)
 		return (printf("No argv provided\n"), 0);
 	len = ft_strlen(argv[1]);
 	if (len < 4 || argv[1][len -1] != 'b' || argv[1][len -2] != 'u' || argv[1][len - 3] != 'c' || argv[1][len - 4] != '.')
 		return (printf("Error: argv is not .cub file\n"), 0);
+	temp_fd = open(argv[1], O_RDONLY | __O_DIRECTORY);
+	if (temp_fd != -1)
+	{
+		return (close(temp_fd), printf("Error: the arg provided is a directory\n"), 0);
+	}
 	return (1);
 	
 }
 
 int	successfull_parsing(int argc, char **argv, t_game *game)
 {
-	int	n_lines;
-	int fd;
+	int		fd;
+	char	*line;
 
-	n_lines = 0;
 	if (!good_argument(argc, argv))
 		return(0);
-	fd = open(argv[1], O_RDONLY, 0777);
+	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
-		return(printf("Error in opening the map\n"), 0);
+		return(printf("Error in opening the argument provided\n"), 0);
 	while (1)
 	{
-		char * line = get_next_line(fd);
+		line = get_next_line(fd);
 		if (line == NULL)
 			break ;
-		n_lines++;
 		remove_newline(line);
 		if (!add_new_node(line, &game->start_list_pointer))
 			return (free(line), 0);

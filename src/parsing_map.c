@@ -31,8 +31,8 @@ static int	check_elements_and_get_info(t_game *game)
 	lst = game->start_map_pointer;
 	while(game && lst) //probably i don't need to check game hiihh
 	{
-		if (!lst->next && lst->map_line[0] == '\0')
-			return (printf("Ending a map with multiple new lines is not allowed\n"), 0); //check with a peer 
+		// if (!lst->next && lst->map_line[0] == '\0')
+		// 	return (printf("Ending a map with multiple new lines is not allowed\n"), 0); removed tycho 
 		i = -1;
 		while(lst->map_line[++i])
 		{
@@ -47,6 +47,7 @@ static int	check_elements_and_get_info(t_game *game)
 				game->camera_start_info->cardinal_point = lst->map_line[i];
 				game->camera_start_info->x = i;
 				game->camera_start_info->y = game->n_rows; //could seem confusing but n_rows is updated line by line
+				lst->map_line[i] = '0';
 			}
 			else
 				return(printf("the map contains an element that is not allowed, or not allowed more than once\n"), 0);
@@ -56,6 +57,8 @@ static int	check_elements_and_get_info(t_game *game)
 		game->n_rows++;
 		lst = lst->next;
 	}
+	if (!got_cardinal)
+		return(printf("Error, no player has been given \n"), 0);
 	return (1);
 }
 

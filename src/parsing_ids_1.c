@@ -26,7 +26,7 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 	initialize_count(&n_ids);
 	game->n_ids = &n_ids;
 	if (!list)
-		return (0); //i keep for now but probably I can get rid of this one
+		return (printf("Error, given file is empty\n"), 0); //another way to check that gnl returned null immediately
 	while (list)
 	{
 		while(list && (list->map_line[0] == '\n' || list->map_line[0] == '\0'))
