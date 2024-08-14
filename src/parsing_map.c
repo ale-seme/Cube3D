@@ -31,8 +31,8 @@ static int	check_elements_and_get_info(t_game *game)
 	lst = game->start_map_pointer;
 	while(game && lst) //probably i don't need to check game hiihh
 	{
-		// if (!lst->next && lst->map_line[0] == '\0')
-		// 	return (printf("Ending a map with multiple new lines is not allowed\n"), 0); removed tycho 
+		if (lst->map_line[0] == '\0') //changed to this
+			return (printf("New lines in map are not allowed\n"), 0);
 		i = -1;
 		while(lst->map_line[++i])
 		{
@@ -58,7 +58,7 @@ static int	check_elements_and_get_info(t_game *game)
 		lst = lst->next;
 	}
 	if (!got_cardinal)
-		return(printf("Error, no player has been given \n"), 0);
+		return(printf("Error, one cardinal is needed for the player starting position\n"), 0);
 	return (1);
 }
 
