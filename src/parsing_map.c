@@ -20,12 +20,15 @@ static void    convert_spaces_and_copy_map(t_game *game, t_lst *temp)
 	}
 }
 
+static	int check_elements
+
 static int	check_elements_and_get_info(t_game *game)
 {
-	t_lst *lst;
-	int i;
-	bool	got_cardinal = false;
+	t_lst	*lst;
+	int		i;
+	bool	got_cardinal;
 
+	got_cardinal = false;
 	game->n_rows = 0; //for now here but i should do before 
 	game->n_columns = 0; //for now here but I should do before
 	lst = game->start_map_pointer;
@@ -76,9 +79,7 @@ int	map_enclosed_by_walls(t_game *game)
 		{
 			if ((x == 0 || (x == game->n_columns -1) || y == 0 \
 			|| (y == game->n_rows -1)) && (game->working_map[y][x] == '0'))
-			{
 				return(printf("the map is NOT sourrounded by walls\n"), 0);
-			}
 			else
 				if (game->working_map[y][x] == '0' && (game->working_map[y][x -1] == '2' \
 				|| game->working_map[y][x + 1] == '2' \
@@ -87,7 +88,6 @@ int	map_enclosed_by_walls(t_game *game)
 					return(printf("Error: the map is not sourrounded by walls. y: %d, x: %d\n", y, x), 0);
 			x++;
 		}
-		//printf("%s\n", game->working_map[y]);
 		y++;
 	}
 	return(1);
