@@ -20,7 +20,28 @@ static void    convert_spaces_and_copy_map(t_game *game, t_lst *temp)
 	}
 }
 
-static	int check_elements
+static int convert_spaces_and_check_values(int *i, t_lst *lst, t_game *game, bool *got_cardinal)
+{
+	while(lst->map_line[++(*i)])
+	{
+		if (ft_strchr(ELEMENTS, lst->map_line[*i]))
+		{
+			if (lst->map_line[*i] == ' ')
+				lst->map_line[*i] = '2';
+		}
+		else if (ft_strchr(CARDINALS, lst->map_line[*i]) && !(*got_cardinal))
+		{
+			*got_cardinal = true;
+			game->camera_start_info->cardinal_point = lst->map_line[*i];
+			game->camera_start_info->x = *i;
+			game->camera_start_info->y = game->n_rows; //could seem confusing but n_rows is updated line by line
+			lst->map_line[*i] = '0';
+		}
+		else
+			return(printf("the map contains an element that is not allowed, or not allowed more than once\n"), 0);
+		}
+		return (1);
+}
 
 static int	check_elements_and_get_info(t_game *game)
 {
@@ -37,24 +58,8 @@ static int	check_elements_and_get_info(t_game *game)
 		if (lst->map_line[0] == '\0') //changed to this
 			return (printf("Empty lines in the map are no allowed\n"), 0);
 		i = -1;
-		while(lst->map_line[++i])
-		{
-			if (ft_strchr(ELEMENTS, lst->map_line[i]))
-			{
-				if (lst->map_line[i] == ' ')
-					lst->map_line[i] = '2';
-			}
-			else if (ft_strchr(CARDINALS, lst->map_line[i]) && !got_cardinal)
-			{
-				got_cardinal = true;
-				game->camera_start_info->cardinal_point = lst->map_line[i];
-				game->camera_start_info->x = i;
-				game->camera_start_info->y = game->n_rows; //could seem confusing but n_rows is updated line by line
-				lst->map_line[i] = '0';
-			}
-			else
-				return(printf("the map contains an element that is not allowed, or not allowed more than once\n"), 0);
-		}
+		if (!convert_spaces_and_check_values(&i, lst, game, &got_cardinal))
+			return (0);
 		if (i > game->n_columns)
 			game->n_columns = i;
 		game->n_rows++;

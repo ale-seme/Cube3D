@@ -66,4 +66,3 @@ int	check_ids_and_info(char *line, t_game *game)
 		return (0);
 	return (1);
 }
-
