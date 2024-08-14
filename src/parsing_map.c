@@ -32,7 +32,7 @@ static int	check_elements_and_get_info(t_game *game)
 	while(game && lst) //probably i don't need to check game hiihh
 	{
 		if (lst->map_line[0] == '\0') //changed to this
-			return (printf("New lines in map are not allowed\n"), 0);
+			return (printf("Empty lines in the map are no allowed\n"), 0);
 		i = -1;
 		while(lst->map_line[++i])
 		{
