@@ -26,6 +26,12 @@ void	free_list(t_lst *lst)
 	}
 }
 
+void 	free_int_array(int *ia)
+{
+	if (ia)
+		free(ia);
+}
+
 // int main(void)
 // {
 //     char *hello = "hello,this,is,me";

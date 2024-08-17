@@ -26,7 +26,10 @@ static int	check_and_store_texture(char *line, int n_id, t_game *game)
 	increment_id_count(game, n_id);
 	while((*temp >= 9 && *temp <= 13) || *temp == ' ')
 		temp++;
-	texture_fd = open(temp, O_RDONLY, 0777);
+	texture_fd = open(temp, O_RDONLY | __O_DIRECTORY);
+	if (texture_fd != -1)
+		return(close(texture_fd), printf("Error, an identifier has a directory as path\n"), 0);
+	texture_fd = open(temp, O_RDONLY);
 	if (texture_fd == -1)
 	{
 		printf("An identifier has a texture with invalid path or permissions\n");

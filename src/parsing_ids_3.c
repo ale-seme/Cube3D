@@ -47,6 +47,8 @@ int	manage_floor_cealing_ids_and_usless_char(char *line, t_game *game)
 	}
 	else if (!line || (line[0] && line[0] != '\n'))
 	{
+		free_int_array(game->floor_rbg_array);
+		free_int_array(game->cealing_rbg_array);
 		return(printf("Error, presence of a usless char before the map"), 0);
 	} //i'm converting all the newlines into null terms so idk
 	return (1);

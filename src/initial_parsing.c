@@ -26,6 +26,8 @@ static int	add_new_node(char *line, t_lst **list)
 	if (!new_node)
 		return(printf("Error in malloc new node\n"), 0);
 	new_node->map_line = ft_strdup(line);
+	if (new_node->map_line == NULL)
+		return(printf("Error, strdup failed during initial parsing\n"), 0);
 	new_node->next = NULL;
 	if (list != NULL)
 	{
@@ -78,7 +80,7 @@ int	successfull_parsing(int argc, char **argv, t_game *game)
 			break ;
 		remove_newline(line);
 		if (!add_new_node(line, &game->start_list_pointer))
-			return (free(line), free_list(game->start_list_pointer), 0);
+			return (free(line), 0);
 		free(line);
 	}
 	if (!check_ids_and_get_map_start(game->start_list_pointer, game) || \
