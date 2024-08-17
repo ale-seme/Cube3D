@@ -26,10 +26,12 @@ void	free_list(t_lst *lst)
 	}
 }
 
-void 	free_int_array(int *ia)
+void 	free_rbg_arrays(int *floor, int *cealing)
 {
-	if (ia)
-		free(ia);
+	if (floor)
+		free(floor);
+	if (cealing)
+		free(cealing);
 }
 
 // int main(void)

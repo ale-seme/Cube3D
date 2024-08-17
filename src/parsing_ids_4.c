@@ -40,17 +40,17 @@ static int	traverse_and_atoi_check(int n_id, t_game *game, char **ss)
 	array = malloc(sizeof(int) * 3);
 	if (!array)
 		return (printf("Error: failed to malloc the int array for RGBs\n"), 0);
+	if (n_id == 4)
+		game->floor_rbg_array = array;
+	else
+		game->cealing_rbg_array = array;
 	while(ss[++i])
 	{
 		
 		array[i] = check_and_atoi(ss[i]);
 		if (array[i] < 0)
-			return (free(array), 0);
+			return (0);
 	}
-	if (n_id == 4)
-		game->floor_rbg_array = array;
-	else
-		game->cealing_rbg_array = array;
 	return (1);
 }
 
@@ -73,7 +73,7 @@ int	split_store_and_check_rbg_amount(char *temp, int n_id, t_game *game)
 	ss = ft_split(temp, ',');
 	if (!ss)
 		return (printf("Error in splitting the rgb values for the identifier\n"), 0);
-	if (!right_amount(ss))
+	if (!right_amount(ss))//need also here to free the goddamn thing array
 		return (free_split(ss), printf("Error: the program accepts 3 and only 3 RGBs for the ids\n"), 0);
 	if (!traverse_and_atoi_check(n_id, game, ss))
 		return (free_split(ss), 0);

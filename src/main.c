@@ -14,5 +14,6 @@ int main(int argc, char **argv)
 	 int y = -1;
 	 while(game.working_map[++y])
 	 	printf("%s\n", game.working_map[y]);
+	printf("%d\n", game.floor_rbg_array[0]);
 	return (0);
 }
