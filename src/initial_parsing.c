@@ -78,7 +78,7 @@ int	successfull_parsing(int argc, char **argv, t_game *game)
 			break ;
 		remove_newline(line);
 		if (!add_new_node(line, &game->start_list_pointer))
-			return (free(line), 0);
+			return (free(line), free_list(game->start_list_pointer), 0);
 		free(line);
 	}
 	if (!check_ids_and_get_map_start(game->start_list_pointer, game) || \

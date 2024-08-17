@@ -79,4 +79,9 @@ void	increment_id_count(t_game *game, int n_id);
 char	*get_next_line(int fd);
 int		successfull_parsing(int argc, char **argv, t_game *game);
 
+/*free memory functions*/
+void	free_list(t_lst *lst);
+void	free_split(char **ss);
+
+
 #endif
