@@ -82,7 +82,6 @@ int		successfull_parsing(int argc, char **argv, t_game *game);
 /*free memory functions*/
 void	free_list(t_lst *lst);
 void	free_split(char **ss);
-void	free_rbg_arrays(int *floor, int *cealing);
-
+void	free_game(t_game *game);
 
 #endif

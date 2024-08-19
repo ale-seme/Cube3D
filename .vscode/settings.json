@@ -5,6 +5,7 @@
 		"unistd.h": "c",
 		"ctype.h": "c",
 		"limits.h": "c",
-		"libft.h": "c"
+		"libft.h": "c",
+		"cub3d.h": "c"
 	}
 }

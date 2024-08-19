@@ -26,12 +26,22 @@ void	free_list(t_lst *lst)
 	}
 }
 
-void 	free_rbg_arrays(int *floor, int *cealing)
+void	free_game(t_game *game)
 {
-	if (floor)
-		free(floor);
-	if (cealing)
-		free(cealing);
+	if (game->camera_start_info)
+		free(game->camera_start_info);
+	if (game->working_map)
+	{
+		free_split(game->working_map);
+	}
+	if (game->cealing_rbg_array)
+	{
+		free(game->cealing_rbg_array);
+	}
+	if (game->floor_rbg_array)
+	{
+		free(game->floor_rbg_array);
+	}
 }
 
 // int main(void)

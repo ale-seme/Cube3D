@@ -29,7 +29,7 @@ static int	check_convert_and_store_rbgs(char *line, int n_id, t_game *game)
 	if (!(*temp))
 		return(printf("Floor/Cealing has empty rbg values\n"));
 	if (!split_store_and_check_rbg_amount(temp, n_id, game))
-		return(free_rbg_arrays(game->floor_rbg_array, game->cealing_rbg_array), 0);
+		return(0);
 	return (1);
 }
 
@@ -47,8 +47,7 @@ int	manage_floor_cealing_ids_and_usless_char(char *line, t_game *game)
 	}
 	else if (!line || (line[0] && line[0] != '\n'))
 	{
-		free_rbg_arrays(game->floor_rbg_array, game->cealing_rbg_array);
-		return(printf("Error, presence of a usless char before the map"), 0);
+		return(printf("Error, presence of a usless char before the map\n"), 0);
 	} //i'm converting all the newlines into null terms so idk
 	return (1);
 }

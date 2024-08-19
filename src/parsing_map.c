@@ -66,7 +66,7 @@ static int	check_elements_and_get_info(t_game *game)
 		lst = lst->next;
 	}
 	if (!got_cardinal)
-		return(printf("Error, one cardinal is needed for the player starting position\n"), 0);
+		return(printf("Error: one cardinal is needed for the player starting position\n"), 0);
 	return (1);
 }
 
@@ -106,7 +106,7 @@ int	check_adapt_and_copy_map(t_game *game)
 	temp = game->start_map_pointer;
 	game->camera_start_info = malloc(sizeof(t_camera)); //maybe I should do this before as well
 	if (!game->camera_start_info)
-		return (printf("error in malloc camera info\n"), 0);
+		return (printf("Error: failed malloc in camera info\n"), 0);
 	if (!check_elements_and_get_info(game))
 		return (0);
 	game->working_map = malloc(sizeof(char *) * (game->n_rows + 1));
