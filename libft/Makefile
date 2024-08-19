@@ -6,7 +6,7 @@
 #    By: asemerar <asemerar@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/04 16:04:37 by asemerar      #+#    #+#                  #
-#    Updated: 2024/01/20 15:43:36 by asemerar      ########   odam.nl          #
+#    Updated: 2024/08/19 17:35:41 by ale           ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,13 +34,13 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: $(OBJSB) $(OBJS)
-	ar rcs $(NAME) $(OBJS) $(OBJSB)
+	@ar rcs $(NAME) $(OBJS) $(OBJSB)
 clean:
 	rm -f $(OBJS) $(OBJSB)
 
