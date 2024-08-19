@@ -26,7 +26,7 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 	initialize_count(&n_ids);
 	game->n_ids = &n_ids;
 	if (!list)
-		return (printf("Error, given file is empty\n"), 0); //another way to check that gnl returned null immediately
+		return (printf(ERR_EMPTY_F), 0); //another way to check that gnl returned null immediately
 	while (list)
 	{
 		while(list && (list->map_line[0] == '\n' || list->map_line[0] == '\0'))
@@ -40,10 +40,10 @@ int	check_ids_and_get_map_start(t_lst *list, t_game *game)
 			break ;
 	}
 	if (!check_ids_amount(&n_ids)) //could also check if (!list)
-		return(printf("Error with the identifiers given in the map file\n"), 0);
+		return(printf(ERR_BAD_IDS), 0);
 	while(list && (list->map_line[0] == '\n' || list->map_line[0] == '\0'))
 		list = list->next;
 	if (!list)
-		return (printf("Error, reached end of map with not enough info\n"), 0);
+		return (printf(ERR_NO_INFO), 0);
 	return (game->start_map_pointer = list, 1);
 }

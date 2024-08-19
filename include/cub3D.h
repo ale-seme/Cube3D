@@ -9,15 +9,25 @@
 
 #define CARDINALS "NSWE"
 #define ELEMENTS "01 "
-// typedef struct game_info
-// {
-// 	int rbgs[2][3];
 
-// 	char **floor_rbg;
-// 	char **ceiling_rbg;
-
-	
-// }
+/*error messages*/
+#define ERR_NODE "Error\nFailed malloc in new node\n"
+#define	ERR_STRDUP "Error\nStrdup failed during initial parsing\n"
+#define	ERR_NO_ARG "Error\nNo argv provided\n"
+#define	ERR_NO_CUB "Error\nargv is not a .cub file\n" 
+#define ERR_ARG_DIR "Error\nThe arg provided is a directory\n"
+#define ERR_ARG_OPEN "Error\nFailed to open the argument provided\n"
+#define ERR_EMPTY_F "Error\nGiven file is empty\n"
+#define ERR_BAD_IDS "Error\nBad or incomplete identifiers given\n"
+#define ERR_NO_INFO "Error\nReached end of map with not enough info\n"
+#define ERR_FAKE_ID "Error\nFake identifier detected\n"
+#define ERR_TX_DIR "Error\nAn identifier has a directory as path\n"
+#define ERR_TX_OPEN	"Error\nFailed to open an id texture\n"
+// #define ERR_
+// #define
+// #define
+// #define
+// #define
 
 typedef struct s_lst
 {

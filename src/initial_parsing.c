@@ -24,10 +24,10 @@ static int	add_new_node(char *line, t_lst **list)
 	
 	new_node = malloc(sizeof(t_lst));
 	if (!new_node)
-		return(printf("Error in malloc new node\n"), 0);
+		return(printf(ERR_NODE), 0);
 	new_node->map_line = ft_strdup(line);
 	if (new_node->map_line == NULL)
-		return(printf("Error, strdup failed during initial parsing\n"), 0);
+		return(printf(ERR_STRDUP), 0);
 	new_node->next = NULL;
 	if (list != NULL)
 	{
@@ -50,15 +50,13 @@ static int good_argument(int argc, char** argv)
 	int	temp_fd;
 
 	if (argc < 2)
-		return (printf("No argv provided\n"), 0);
+		return (printf(ERR_NO_ARG), 0);
 	len = ft_strlen(argv[1]);
 	if (len < 4 || argv[1][len -1] != 'b' || argv[1][len -2] != 'u' || argv[1][len - 3] != 'c' || argv[1][len - 4] != '.')
-		return (printf("Error: argv is not .cub file\n"), 0);
+		return (printf(ERR_NO_CUB), 0);
 	temp_fd = open(argv[1], O_RDONLY | __O_DIRECTORY);
 	if (temp_fd != -1)
-	{
-		return (close(temp_fd), printf("Error: the arg provided is a directory\n"), 0);
-	}
+		return (close(temp_fd), printf(ERR_ARG_DIR), 0);
 	return (1);
 	
 }
@@ -72,7 +70,7 @@ int	successfull_parsing(int argc, char **argv, t_game *game)
 		return(0);
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
-		return(printf("Error in opening the argument provided\n"), 0);
+		return(printf(ERR_ARG_OPEN), 0);
 	while (1)
 	{
 		line = get_next_line(fd);
