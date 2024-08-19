@@ -22,12 +22,12 @@ static int	check_convert_and_store_rbgs(char *line, int n_id, t_game *game)
 	char *temp;
 	temp = line + 1;
 	if (!temp || !temp[0] || !ft_isspace(temp[0]))
-		return(printf("Error, fake identifier detected\n"), 0);
+		return(printf(ERR_FAKE_ID), 0);
 	increment_id_count(game, n_id);
 	while ((*temp >= 9 && *temp <= 13) || *temp == ' ')
 		temp++;
 	if (!(*temp))
-		return(printf("Floor/Cealing has empty rbg values\n"));
+		return(printf(ERR_NO_RBGS), 0);
 	if (!split_store_and_check_rbg_amount(temp, n_id, game))
 		return(0);
 	return (1);
@@ -47,7 +47,7 @@ int	manage_floor_cealing_ids_and_usless_char(char *line, t_game *game)
 	}
 	else if (!line || (line[0] && line[0] != '\n'))
 	{
-		return(printf("Error, presence of a usless char before the map\n"), 0);
+		return(printf(ERR_USLESS_C), 0);
 	} //i'm converting all the newlines into null terms so idk
 	return (1);
 }

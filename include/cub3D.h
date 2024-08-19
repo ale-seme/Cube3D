@@ -11,23 +11,34 @@
 #define ELEMENTS "01 "
 
 /*error messages*/
-#define ERR_NODE "Error\nFailed malloc in new node\n"
-#define	ERR_STRDUP "Error\nStrdup failed during initial parsing\n"
-#define	ERR_NO_ARG "Error\nNo argv provided\n"
-#define	ERR_NO_CUB "Error\nargv is not a .cub file\n" 
-#define ERR_ARG_DIR "Error\nThe arg provided is a directory\n"
-#define ERR_ARG_OPEN "Error\nFailed to open the argument provided\n"
-#define ERR_EMPTY_F "Error\nGiven file is empty\n"
-#define ERR_BAD_IDS "Error\nBad or incomplete identifiers given\n"
-#define ERR_NO_INFO "Error\nReached end of map with not enough info\n"
-#define ERR_FAKE_ID "Error\nFake identifier detected\n"
-#define ERR_TX_DIR "Error\nAn identifier has a directory as path\n"
-#define ERR_TX_OPEN	"Error\nFailed to open an id texture\n"
-// #define ERR_
-// #define
-// #define
-// #define
-// #define
+# define ERR_NODE      "Error\nFailed malloc in new node\n"
+# define ERR_STRDUP    "Error\nStrdup failed during initial parsing\n"
+# define ERR_NO_ARG    "Error\nNo argv provided\n"
+# define ERR_NO_CUB    "Error\nargv is not a .cub file\n" 
+# define ERR_ARG_DIR   "Error\nThe arg provided is a directory\n"
+# define ERR_ARG_OPEN  "Error\nFailed to open the argument provided\n"
+# define ERR_EMPTY_F   "Error\nGiven file is empty\n"
+# define ERR_BAD_IDS   "Error\nBad or incomplete identifiers given\n"
+# define ERR_NO_INFO   "Error\nReached end of map with not enough info\n"
+# define ERR_FAKE_ID   "Error\nFake identifier detected\n"
+# define ERR_TX_DIR    "Error\nAn identifier has a directory as path\n"
+# define ERR_TX_OPEN   "Error\nFailed to open an id texture\n"
+# define ERR_USLESS_C  "Error\nPesence of a usless char before the map\n"
+# define ERR_NO_RBGS   "Error\nFloor/Cealing has empty rbg values\n"
+# define ERR_NO_RBG    "Error\nOne of the rbgs is empty/contains only spaces\n"
+# define ERR_BAD_RBG   "Error\nOnly digit after spaces as RBG codes\n"
+# define ERR_OVFL_RBG  "Error\nNumber given as RBG parameter should be max 255\n"
+# define ERR_ARRAY     "Error\nFailed to malloc the int array for RBGs\n"
+# define ERR_SPL_RBG   "Error\nFailed to split the rgb values for an id"
+# define ERR_NUM_RGBS  "Error\nThe program accepts 3 and only 3 ids' RBGs"
+# define ERR_EMPTY_LN  "Error\nEmpty lines in the map are no allowed\n"
+# define ERR_NO_CARDI  "Error\nOne cardinal is needed for player starting pos\n"
+# define ERR_BAD_WALLS "Error\nThe map is NOT sourrounded by walls!\n"
+# define ERR_CAM_MEM   "Error\nFailed malloc for camera info\n"
+# define ERR_2D_ARRAY  "Error\nFailed malloc for 2d array\n"
+# define ERR_2D_LINE   "Error\nFailed malloc for a single line in 2D array\n"
+# define ERR_NO_ALLOW  "Error\nMap contains a forbidded element or an element not allowed more than once\n"
+//#define
 
 typedef struct s_lst
 {
