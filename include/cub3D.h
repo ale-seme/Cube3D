@@ -6,6 +6,7 @@
 #include "libft.h"
 #include "stdbool.h"
 #include  "fcntl.h"
+#include "../MLX42/include/MLX42/MLX42.h"
 
 #define CARDINALS "NSWE"
 #define ELEMENTS "01 "

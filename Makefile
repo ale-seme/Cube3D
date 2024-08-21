@@ -6,9 +6,11 @@ LINKS =
 
 INCLUDES = -I./libft -I./include
 
+MLXFLAGS = MLX42/build/libmlx42.a -Iinclude -ldl -lglfw -pthread -lm
+
 SRC = main.c get_next_line.c initial_parsing.c parsing_ids_1.c \
 	parsing_ids_2.c parsing_ids_3.c parsing_ids_4.c parsing_map.c \
-	free_stuff.c
+	free_stuff.c test.c
 
 DIR_SRC = src
 
@@ -21,8 +23,10 @@ OBJ = ${subst ${DIR_SRC}/, ${DIR_OBJ}/, ${SRC:.c=.o}}
 
 LIBFT = libft/libft.a
 
+GIT_MLX = git clone https://github.com/codam-coding-college/MLX42.git
+
 ${NAME}: ${OBJ} ${LIBFT}
-	@${CC} -o ${CFLAGS} $^ ${LINKS} -o $@
+	@${CC} -o ${CFLAGS} $^ ${LINKS} -o $@ $(MLXFLAGS)
 
 all : ${NAME}
 
@@ -39,6 +43,15 @@ clean:
 fclean: clean
 	@rm -rf ${NAME}
 	@make fclean -C libft
+
+download_mlx42:
+	$(GIT_MLX)
+	cd MLX42 && cmake -B build
+	cd MLX42 && cmake --build build -j4 && clear
+	@echo "\033[0;32mNow you can "make" or "make bonus" and play :=D\033[0m"
+
+delete_mlx42:
+	rm -rf MLX42
 
 re: fclean all 
 
