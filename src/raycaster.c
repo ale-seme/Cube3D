@@ -34,17 +34,19 @@ int worldMap[mapWidth][mapHeight]=
   {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
 };
 
-int main(int argc, char **argv)
-{
-    double  posX = 22, posY = 12;
-    double  dirX = -1, dirY = 0;
-    double planeX = 0, planeY = 0.66; 
+// int main(void)
+// {
+//     // double  posX = 22, posY = 12;
+//     // double  dirX = -1, dirY = 0;
+//     // double planeX = 0, planeY = 0.66; 
 
-    double  time  = 0;
-    double  oldTime = 0;
+//     // double  time  = 0;
+//     // double  oldTime = 0;
 
     
 
-
-    screen(screenWidth, screenHeigh, 0, "Raycaster");
-}
+//     mlx_t *mlx;
+//     mlx = mlx_init(screenWidth, screenHeight, "Raycaster", true);
+//     while(!done())
+//     mlx_loop(mlx);
+// }
