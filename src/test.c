@@ -468,14 +468,14 @@ t_data *init_argumet()	// init the data structure
 	return (dt); // return the data structure
 }
 
-int main()	// main function
-{
-	t_data	*data;
+// int main()	// main function
+// {
+// 	t_data	*data;
 
-	data = init_argumet();	// init the data structure
-	start_the_game(data);	// start the game
-	return 0;
-}
+// 	data = init_argumet();	// init the data structure
+// 	start_the_game(data);	// start the game
+// 	return 0;
+// }
 
 // 	mlx_scroll_hook(mlx, &my_scrollhook, NULL);
 // 	mlx_loop(mlx);
