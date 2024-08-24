@@ -41,6 +41,29 @@
 # define ERR_NO_ALLOW  "Error\nMap contains a forbidded element or an element not allowed more than once\n"
 //#define
 
+typedef struct s_multi
+{
+	mlx_image_t *image;
+	int			x;
+	int			y;
+}t_multi;
+
+typedef struct s_images
+{
+	t_multi *player;
+	t_multi *idk;
+	mlx_image_t *something;
+	mlx_image_t *something_2;
+}t_images;
+
+typedef struct s_ray
+{
+	double	ray_angle;
+	double	wall_dst;
+	bool	is_met;
+} t_ray;
+
+
 typedef struct s_lst
 {
 	char			*map_line;
@@ -51,6 +74,8 @@ typedef struct s_camera
 {
 	int		x;
 	int		y;
+	double	angle;
+	float	fov_radi;
 	char	cardinal_point;
 } t_camera;
 
@@ -79,10 +104,17 @@ typedef struct s_game
 	int				n_rows;
 	int				n_columns;
 	char**			working_map;
-
-	
 } t_game;
 
+typedef struct s_mlx_data
+{
+	mlx_t		*mlx;
+	mlx_image_t	*image;
+	t_game		*game;
+	t_camera	*camera;
+	t_ray		*ray;		
+	
+} t_mlx_data;
 
 /*parsing map management*/
 int		check_adapt_and_copy_map(t_game *game);

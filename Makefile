@@ -10,7 +10,7 @@ MLXFLAGS = MLX42/build/libmlx42.a -Iinclude -ldl -lglfw -pthread -lm
 
 SRC = main.c get_next_line.c initial_parsing.c parsing_ids_1.c \
 	parsing_ids_2.c parsing_ids_3.c parsing_ids_4.c parsing_map.c \
-	free_stuff.c test.c raycaster.c
+	free_stuff.c raycaster.c
 
 DIR_SRC = src
 

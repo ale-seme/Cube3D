@@ -9,36 +9,43 @@
 # define FOW 66
 
 
+
 int main(int argc, char **argv)
 {
 	
 	t_game game;
-	game.start_list_pointer = NULL;
+	t_mlx_data mlx_data;
+
+    game.start_list_pointer = NULL;
 	if (!successfull_parsing(argc, argv, &game))
-		return (free_list(game.start_list_pointer), free_game(&game), 1);
-	
-	//free_list(game.start_list_pointer);free_game(&game);
-    //printf("width %d and height: %d and posiiton x %d and y %d\n", game.n_columns, game.n_rows, game.camera_start_info->x, game.camera_start_info->y);
-	//initialize_layer(&game);
-    mlx_t *mlx;
-    mlx = mlx_init(SCREEN_WIDTH, SCREEN_HEIGHT, "Cub3D", true);
-    mlx_set_setting(MLX_STRETCH_IMAGE, true);
-    
-    mlx_image_t *img = mlx_new_image(mlx, SCREEN_WIDTH, SCREEN_HEIGHT);
-    int player_pixel_x = game.camera_start_info->x * CELL_SIZE + CELL_SIZE/2;
-    int player_pixel_y = game.camera_start_info->y * CELL_SIZE + CELL_SIZE/2;
-    printf("hello: %d, %d\n", game.camera_start_info->x, game.camera_start_info->y);
-    {
-        mlx_put_pixel(img, player_pixel_x, player_pixel_y, 0x00FF00FF);
-    }
-    for(int f = 0; f < SCREEN_HEIGHT; f++)
-    {
-        mlx_put_pixel(img, SCREEN_WIDTH -1, f, 0xFF0000FF);
-    }
-    mlx_image_to_window(mlx, img, 0, 0);
-    mlx_loop(mlx);
+		return (free_list(game.start_list_pointer), free_game(&game), 1); // i still need to write a functoin to free in one shot
 	// int y = -1;
 	// while(game.working_map[++y])
 	//  	printf("%s\n", game.working_map[y]);
+
+    mlx_data.game = &game;
+    mlx_data.camera = game.camera_start_info;
+    mlx_data.mlx = mlx_init(SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D", true);
+    mlx_data.image = mlx_new_image(mlx_data.mlx, 32, 32);
+    
+    mlx_texture_t *cust_texture = mlx_load_png("/home/ale/Cube3D/textures_ids/water_wall.png");
+    mlx_data.image = mlx_texture_to_image(mlx_data.mlx, cust_texture);
+
+    int y = 0;
+    int x = 0;
+    while(game.working_map[y])
+    {
+        x = 0;
+        while(game.working_map[y][x])
+        {
+            if (game.working_map[y][x] == '1')
+                mlx_image_to_window(mlx_data.mlx, mlx_data.image, x *CELL_SIZE, y *CELL_SIZE);
+            x++;
+        }
+        y++;
+    }
+    mlx_loop(mlx_data.mlx);
+    
+
 	return (0);
 }
