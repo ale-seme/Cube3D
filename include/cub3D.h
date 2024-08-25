@@ -110,6 +110,7 @@ typedef struct s_mlx_data
 {
 	mlx_t		*mlx;
 	mlx_image_t	*image;
+	mlx_image_t *image_2;
 	t_game		*game;
 	t_camera	*camera;
 	t_ray		*ray;		
