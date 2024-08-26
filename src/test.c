@@ -11,19 +11,18 @@
 // example:
 // cc -O3 -ffast-math -framework Cocoa -framework OpenGL -framework IOKit -lglfw (path to libmlx42.a) -L(path to glfw library) cub3d.c -o cub
 
-#include <cub3D.h>
 # include <string.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <math.h>
-// include the mlx library
+//# include <cub3D.h>
 
 # define S_W 1900 // screen width
 # define S_H 1000 // screen height
 # define TILE_SIZE 30 // tile size
 # define FOV 60 // field of view
-# define ROTATION_SPEED 0.1 // rotation speed
-# define PLAYER_SPEED 8	// player speed
+# define ROTATION_SPEED 0.045 // rotation speed
+# define PLAYER_SPEED 4	// player speed
 
 typedef struct s_player //the player structure
 {
@@ -475,10 +474,4 @@ t_data *init_argumet()	// init the data structure
 // 	data = init_argumet();	// init the data structure
 // 	start_the_game(data);	// start the game
 // 	return 0;
-// }
-
-// 	mlx_scroll_hook(mlx, &my_scrollhook, NULL);
-// 	mlx_loop(mlx);
-// 	mlx_terminate(mlx);
-// 	return (EXIT_SUCCESS);
 // }
