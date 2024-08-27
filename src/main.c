@@ -9,6 +9,21 @@
 # define CELL_SIZE 32
 # define FOW 66
 
+static void	initialize_game(t_game *game)
+{
+	game->camera_start_info = NULL;
+	game->cealing_rbg_array = NULL;
+	game->floor_rbg_array = NULL;
+	game->n_ids = NULL;
+	game->start_list_pointer = NULL;
+	game->start_map_pointer = NULL;
+	game->texture_east = NULL;
+	game->texture_nord = NULL;
+	game->texture_south = NULL;
+	game->texture_west = NULL;
+	game->working_map = NULL;
+}
+
 void    ft_green(void *param)
 {
     mlx_image_t * image = (mlx_image_t *)param;
@@ -50,6 +65,7 @@ int main(int argc, char **argv)
 	t_mlx_data mlx_data;
 
     game.start_list_pointer = NULL;
+	initialize_game(&game);
 	if (!successfull_parsing(argc, argv, &game))
 		return (free_list(game.start_list_pointer), free_game(&game), 1); // i still need to write a functoin to free in one shot
 	// int m = -1;
@@ -61,7 +77,7 @@ int main(int argc, char **argv)
     mlx_data.mlx = mlx_init(SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D", true);
     mlx_data.image = mlx_new_image(mlx_data.mlx, 32, 32);
     
-    mlx_texture_t *cust_texture = mlx_load_png("/home/ale/Cube3D/textures_ids/water_wall.png");
+    mlx_texture_t *cust_texture = mlx_load_png("/home/asemerar/Cube3D/textures_ids/water_wall.png");
     mlx_data.image = mlx_texture_to_image(mlx_data.mlx, cust_texture);
 
     int y = 0;

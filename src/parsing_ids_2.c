@@ -29,6 +29,7 @@ static int	check_and_store_texture(char *line, int n_id, t_game *game)
 	texture_fd = open(temp, O_RDONLY | __O_DIRECTORY);
 	if (texture_fd != -1)
 		return(close(texture_fd), printf(ERR_TX_DIR), 0);
+	printf("temp: %s\n", temp);
 	texture_fd = open(temp, O_RDONLY);
 	if (texture_fd == -1)
 	{
