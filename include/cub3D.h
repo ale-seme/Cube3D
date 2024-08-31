@@ -8,8 +8,12 @@
 #include  "fcntl.h"
 #include "../MLX42/include/MLX42/MLX42.h"
 
-#define CARDINALS "NSWE"
-#define ELEMENTS "01 "
+# define CARDINALS "NSWE"
+# define ELEMENTS "01 "
+# define SCREEN_WIDTH 1920
+# define SCREEN_HEIGHT 1000
+# define CELL_SIZE 32
+# define FOW 66
 
 /*error messages*/
 # define ERR_NODE      "Error\nFailed malloc in new node\n"
@@ -77,6 +81,7 @@ typedef struct s_camera
 	double	angle;
 	float	fov_radi;
 	char	cardinal_point;
+	int		test;
 } t_camera;
 
 typedef struct s_count
@@ -99,8 +104,8 @@ typedef struct s_game
 	char			*texture_south;
 	char			*texture_west;
 	char			*texture_east;
-	int				*floor_rbg_array; //if i use atoi already I will do a int pointer
-	int				*cealing_rbg_array; //same here array of integers maybe instead of char **
+	int				*floor_rbg_array;
+	int				*cealing_rbg_array;
 	int				n_rows;
 	int				n_columns;
 	char**			working_map;
@@ -116,6 +121,8 @@ typedef struct s_mlx_data
 	t_ray		*ray;		
 	
 } t_mlx_data;
+
+
 
 /*parsing map management*/
 int		check_adapt_and_copy_map(t_game *game);

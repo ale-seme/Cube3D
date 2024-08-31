@@ -10,7 +10,7 @@ MLXFLAGS = MLX42/build/libmlx42.a -Iinclude -ldl -lglfw -pthread -lm
 
 SRC = main.c get_next_line.c initial_parsing.c parsing_ids_1.c \
 	parsing_ids_2.c parsing_ids_3.c parsing_ids_4.c parsing_map.c \
-	free_stuff.c raycaster.c
+	free_stuff.c raycaster.c 2d_minimap_test.c test.c
 
 DIR_SRC = src
 
@@ -48,7 +48,7 @@ download_mlx42:
 	$(GIT_MLX)
 	cd MLX42 && cmake -B build
 	cd MLX42 && cmake --build build -j4 && clear
-	@echo "\033[0;32mNow you can "make" or "make bonus" and play :=D\033[0m"
+	echo "\033[0;32mNow you can "make" and play :=D\033[0m"
 
 delete_mlx42:
 	rm -rf MLX42
