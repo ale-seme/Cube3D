@@ -110,45 +110,76 @@ static void display_player(t_mlx_data *mlx_data)
     //also we do + cell size/2 so that we put the player at the center of the cell he is starting from :)
 }
 
-void    ft_custom_key(void *param)
+void ft_custom_key(void *param)
 {
     t_mlx_data *mlx_data = (t_mlx_data *)param;
+    mlx_image_t *player = mlx_data->image_player;
 
-    mlx_image_t * player = mlx_data->image_player;
+    // Update angle based on rotation keys
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_LEFT))
+    {
+        mlx_data->camera->angle -= 0.070;
+        if (mlx_data->camera->angle < 0)
+            mlx_data->camera->angle += 2 * PI;
+    }
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_RIGHT))
+    {
+        mlx_data->camera->angle += 0.070;
+        if (mlx_data->camera->angle > 2 * PI)
+            mlx_data->camera->angle -= 2 * PI;
+    }
+
+    // Recalculate direction vector based on updated angle
+    mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
+    mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4;
+
+    printf("the angle of the player %lf\n", mlx_data->camera->angle);
+    printf("the pdx is: %lf and the pdy is %lf\n", mlx_data->camera->pdx, mlx_data->camera->pdy);
 
     int new_x_test = player->instances[0].x;
     int new_y_test = player->instances[0].y;
 
-    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_LEFT))
-    {
-        mlx_data->camera->angle -= 0.1;
-        if (mlx_data->camera->angle < 0)
-            mlx_data->camera->angle += 2 *PI;
-        mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 5;
-        mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 5;
-    }
-    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_RIGHT))
-    {
-        mlx_data->camera->angle += 0.1;
-        if (mlx_data->camera->angle > 2 * PI)
-            mlx_data->camera->angle -= 2 *PI;
-        mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 5;
-        mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 5;
-    }
-    printf("the angle of the player %lf\n", mlx_data->camera->angle);
-    printf("the pdx is: %lf and the pdy is %lf\n", mlx_data->camera->pdx, mlx_data->camera->pdy);
+    float move_x = 0;
+    float move_y = 0;
 
+    // Calculate movement based on key pressed
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_W))
+    {
+        move_x = -cos(mlx_data->camera->angle) * 4;
+        move_y = -sin(mlx_data->camera->angle) * 4;
+        
+    }
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_S))
+    {
+        move_x = cos(mlx_data->camera->angle) * 4;
+        move_y = sin(mlx_data->camera->angle) * 4;
+    }
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_A))
+    {
+        move_x = -sin(mlx_data->camera->angle) * 4;
+        move_y = cos(mlx_data->camera->angle) * 4;
+    }
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_D))
+    {
+        move_x = sin(mlx_data->camera->angle) * 4;
+        move_y = -cos(mlx_data->camera->angle) * 4;
+    }
 
-    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_W) && mlx_data->game->working_map[(new_y_test - 4) / CELL_SIZE][new_x_test / CELL_SIZE] != '1')
-        player->instances[0].y -= 4;
-    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_S) && mlx_data->game->working_map[(new_y_test + 4) / CELL_SIZE][new_x_test / CELL_SIZE] != '1')
-        player->instances[0].y += 4;
-    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_A) && mlx_data->game->working_map[new_y_test/CELL_SIZE][(new_x_test - 4) / CELL_SIZE] != '1')
-        player->instances[0].x -= 4;
-    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_D) && mlx_data->game->working_map[new_y_test/CELL_SIZE][(new_x_test + 4) / CELL_SIZE] != '1')
-        player->instances[0].x += 4;
+    // Update player position
+    int new_x = roundf(player->instances[0].x + move_x);
+    int new_y = roundf(player->instances[0].y + move_y);
+
+    if (mlx_data->game->working_map[new_y / CELL_SIZE][new_x / CELL_SIZE] != '1')
+    {
+        player->instances[0].x = new_x;
+        player->instances[0].y = new_y;
+    }
+
+    // Close window (escape key)
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_ESCAPE))
+    {
         mlx_close_window(mlx_data->mlx);
+    }
 }
 
 
