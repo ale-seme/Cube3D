@@ -6,6 +6,7 @@
 //to be able to cast rays form the player and stop them once they intercept a wall
 
 
+
 static void	initialize_game(t_game *game)
 {
 	game->camera_start_info = NULL;
@@ -21,10 +22,32 @@ static void	initialize_game(t_game *game)
 	game->working_map = NULL;
 }
 
+void    get_angle(t_mlx_data *mlx_data)
+{
+    char cardi;
+
+    cardi = mlx_data->camera->cardinal_point;
+
+    if (cardi == 'N')
+        mlx_data->camera->angle = PI / 2;
+    else if (cardi == 'W')
+        mlx_data->camera->angle = PI;
+    else if (cardi == 'S')
+        mlx_data->camera->angle = 3 * PI /2;
+    else if (cardi == 'E')
+        mlx_data->camera->angle = 2 * PI;
+}
+
 static void initialize_data_for_mlx(t_game *game, t_mlx_data *mlx_data)
 {
     mlx_data->game = game;
     mlx_data->camera = game->camera_start_info;
+    get_angle(mlx_data);
+    mlx_data->camera->pixel_x = game->camera_start_info->x * CELL_SIZE + CELL_SIZE/2;//we do + cell size/2 so that we put the player at
+    mlx_data->camera->pixel_x = game->camera_start_info->y * CELL_SIZE + CELL_SIZE/2;//the center of the cell he is starting from :)
+    mlx_data->camera->fov_radi = FOW * PI/180.0;
+    mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
+    mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4; 
 }
 
 void    monocolor_img_buffer(mlx_image_t *image, uint32_t color)
@@ -47,7 +70,7 @@ static void prepare_images_buffers(t_mlx_data *mlx_data)
     monocolor_img_buffer(mlx_data->image_walls, 0xFFFFFFFF); //we can change easly i liked the black-white combinaiton
     monocolor_img_buffer(mlx_data->image_floor, 0x000000FF); //simply coloring the images before bringing them to window
 
-    mlx_data->image_player = mlx_new_image(mlx_data->mlx, 4, 4);
+    mlx_data->image_player = mlx_new_image(mlx_data->mlx, 4, 4); //i choose 4x4 because it fits well with the map and power of 2
     monocolor_img_buffer(mlx_data->image_player, 0x00FF00FF);
     
     //below an working example of what we would do to bring a texture instead of colored pixels
@@ -96,6 +119,26 @@ void    ft_custom_key(void *param)
     int new_x_test = player->instances[0].x;
     int new_y_test = player->instances[0].y;
 
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_LEFT))
+    {
+        mlx_data->camera->angle -= 0.1;
+        if (mlx_data->camera->angle < 0)
+            mlx_data->camera->angle += 2 *PI;
+        mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 5;
+        mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 5;
+    }
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_RIGHT))
+    {
+        mlx_data->camera->angle += 0.1;
+        if (mlx_data->camera->angle > 2 * PI)
+            mlx_data->camera->angle -= 2 *PI;
+        mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 5;
+        mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 5;
+    }
+    printf("the angle of the player %lf\n", mlx_data->camera->angle);
+    printf("the pdx is: %lf and the pdy is %lf\n", mlx_data->camera->pdx, mlx_data->camera->pdy);
+
+
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_W) && mlx_data->game->working_map[(new_y_test - 4) / CELL_SIZE][new_x_test / CELL_SIZE] != '1')
         player->instances[0].y -= 4;
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_S) && mlx_data->game->working_map[(new_y_test + 4) / CELL_SIZE][new_x_test / CELL_SIZE] != '1')
@@ -106,7 +149,6 @@ void    ft_custom_key(void *param)
         player->instances[0].x += 4;
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_ESCAPE))
         mlx_close_window(mlx_data->mlx);
-
 }
 
 

@@ -4,16 +4,18 @@
 #include <unistd.h>
 #include <stdio.h>
 #include "libft.h"
-#include "stdbool.h"
-#include  "fcntl.h"
+#include <stdbool.h>
+#include "fcntl.h"
+#include <math.h>
 #include "../MLX42/include/MLX42/MLX42.h"
 
-# define CARDINALS "NSWE"
-# define ELEMENTS "01 "
-# define SCREEN_WIDTH 1920
-# define SCREEN_HEIGHT 1000
-# define CELL_SIZE 32
-# define FOW 66
+# define CARDINALS "NSWE" //string containing the cardinals that are allowed
+# define ELEMENTS "01 " //the only allowed elemebts besides cardinals are 0s 1s and normal space (not tabs)
+# define SCREEN_WIDTH 1920 //this is the resoluton of my personal laptop, we can change it to codam's 
+# define SCREEN_HEIGHT 1000 //same 
+# define CELL_SIZE 32 //each cell is 32, could be 64 but it's nice to start with power of 2s
+# define FOW 60 //field of view, which is the angle
+# define PI  3.1415926535
 
 /*error messages*/
 # define ERR_NODE      "Error\nFailed malloc in new node\n"
@@ -45,20 +47,25 @@
 # define ERR_NO_ALLOW  "Error\nMap contains a forbidded element or an element not allowed more than once\n"
 //#define
 
-typedef struct s_multi
-{
-	mlx_image_t *image;
-	int			x;
-	int			y;
-}t_multi;
+// typedef struct s_multi
+// {
+// 	mlx_image_t *image;
+// 	int			x;
+// 	int			y;
+// }t_multi;
 
-typedef struct s_images
-{
-	t_multi *player;
-	t_multi *idk;
-	mlx_image_t *something;
-	mlx_image_t *something_2;
-}t_images;
+// typedef struct s_images
+// {
+// 	t_multi *player;
+// 	t_multi *idk;
+// 	mlx_image_t *something;
+// 	mlx_image_t *something_2;
+// }t_images;
+
+/**
+ * Struct to hold information about rays in the raycasting phase
+ * This is a work in pogress
+ */
 
 typedef struct s_ray
 {
@@ -68,22 +75,46 @@ typedef struct s_ray
 } t_ray;
 
 
+/**
+ * Struct for a linked list used to parse each line returned 
+ * by get_next_line
+ * @param map_line	Ptr to a string of the current node
+ * @param next		Ptr to the next node of the linked list
+ */
 typedef struct s_lst
 {
 	char			*map_line;
 	struct s_lst 	*next;
 } t_lst;
 
+
+/**
+ * Struct holding information about the camera (player)
+ * Currently a work in progress
+ * @param x Current x cell of the player in map coordinates
+ * @param y Current y cell of the player in map coordinates
+ * @param angle Current angle of the player 
+ * @param fov_radi Field of view (FOW) expressed in radiants
+ * @param cardinal_point Character containing the starting cardinal(NSOW)
+ */
 typedef struct s_camera
 {
-	int		x;
-	int		y;
-	double	angle;
-	float	fov_radi;
-	char	cardinal_point;
-	int		test;
+	int 		x;
+	float		pixel_x;
+	float		pdx;
+	int			y;
+	float		pixel_y;
+	float		pdy;		
+	float		angle;
+	float		fov_radi;
+	char		cardinal_point;
+	int			test;
 } t_camera;
 
+/**
+ * Struct used to keep track of the number of identifiers
+ * that have been met during the parsing phase
+ */
 typedef struct s_count
 {
 	int		count_nord;
@@ -94,9 +125,24 @@ typedef struct s_count
 	int		count_ceiling;
 }	t_count;
 
+/** 
+ * Main struct of the game, it contains several informations
+ * that were gathered during the parsing phase
+ * @param start_list_pointer Ptr to linked list used to parse/store all the lines
+ * @param start_map_pointer Ptr to ode of the list where the map finally starts
+ * @param n_ids Ptr to struct containing flags for the identifiers parsing
+ * @param nord Ptr to path of the nord texture after parsing
+ * @param south Ptr to path of the nord texture after parsing
+ * @param west Ptr to path of the nord texture after parsing
+ * @param east Ptr to path of the nord texture after parsing
+ * @param floor_rgb_array Pointer to the string
+ * @param cealing_rgb_array
+ * @param n_rows Number of rows (x) of the 2d map
+ * @param n_columns Number of columns (y) of the 2d map
+ * */
 typedef struct s_game
 {
-	t_lst			*start_list_pointer;
+	t_lst			*start_list_pointer; 
 	t_lst			*start_map_pointer;
 	t_count			*n_ids;
 	t_camera		*camera_start_info;
@@ -111,14 +157,30 @@ typedef struct s_game
 	char**			working_map;
 } t_game;
 
+
+/**
+ * Main struct of the graphical part of the game
+ * Containing several mlx and raycasting elements
+ * For now a work in progress since the focus is on the minimap
+ * 
+ * @param mlx Ptr to main mlx handler struct
+ * @param image_walls Ptr to the image struct for the walls (at the moment will be filled only with same pixels color instead of a texture)
+ * @param image_floor Ptr to the image struct for the floor
+ * @param image_cealing Ptr to the image struct for the cealing
+ * @param game Ptr to the game main struct 
+ * @param camera Ptr to the camera(player) struct
+ * @param ray Ptr to the ray structure
+ */
 typedef struct s_mlx_data
 {
 	mlx_t		*mlx;
-	mlx_image_t	*image;
-	mlx_image_t *image_2;
-	t_game		*game;
-	t_camera	*camera;
-	t_ray		*ray;		
+	mlx_image_t	*image_walls; //for now instead of the textures we get form the parsing just images who's pixels we color
+	mlx_image_t *image_player; // same for the player, for the 2d map we need for ex a 5x5 image that whose pixels we color
+	mlx_image_t *image_floor; //this will be black for the 2d test minimap 
+	mlx_image_t *image_cealing; //this for now doesn't exists for the 2D minimap
+	t_game		*game; //simply a pointer to the game struct
+	t_camera	*camera; // a pointer to the camera information gethered during the parsing(is the player)
+	t_ray		*ray; //pointer to a struct containing information for the raycasting	
 	
 } t_mlx_data;
 
