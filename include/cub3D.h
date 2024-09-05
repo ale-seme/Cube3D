@@ -7,7 +7,7 @@
 #include <stdbool.h>
 #include "fcntl.h"
 #include <math.h>
-#include "../MLX42/include/MLX42/MLX42.h"
+#include "../MLX42/include/MLX42/MLX42.h" //you have to do make download mlx_42 and will work
 
 # define CARDINALS "NSWE" //string containing the cardinals that are allowed
 # define ELEMENTS "01 " //the only allowed elemebts besides cardinals are 0s 1s and normal space (not tabs)
@@ -15,7 +15,9 @@
 # define SCREEN_HEIGHT 1000 //same 
 # define CELL_SIZE 32 //each cell is 32, could be 64 but it's nice to start with power of 2s
 # define FOW 60 //field of view, which is the angle
-# define PI  3.1415926535
+# define CAM_SPEED 4 //this is gonna be the speed at which the player will move in the 4 directions
+# define CAM_ROT 0.050 //for each frame of pressing the rot keys it will add or subtract this from the camera angle
+# define PI  3.1415926535 //the value of PI greco
 
 /*error messages*/
 # define ERR_NODE      "Error\nFailed malloc in new node\n"

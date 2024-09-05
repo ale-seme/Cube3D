@@ -135,8 +135,6 @@ void ft_custom_key(void *param)
     printf("the angle radiants of the player %lf and in grades %lf\n", mlx_data->camera->angle, mlx_data->camera->angle * 180 / PI);
     printf("the pdx is: %lf and the pdy is %lf\n", mlx_data->camera->pdx, mlx_data->camera->pdy);
 
-    int new_x_test = player->instances[0].x;
-    int new_y_test = player->instances[0].y;
 
     float move_x = 0;
     float move_y = 0;
