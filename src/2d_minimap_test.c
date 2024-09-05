@@ -29,13 +29,13 @@ void    get_angle(t_mlx_data *mlx_data)
     cardi = mlx_data->camera->cardinal_point;
 
     if (cardi == 'N')
-        mlx_data->camera->angle = PI / 2;
+        mlx_data->camera->angle = 3 * PI / 2;
     else if (cardi == 'W')
         mlx_data->camera->angle = PI;
     else if (cardi == 'S')
-        mlx_data->camera->angle = 3 * PI /2;
+        mlx_data->camera->angle = PI /2;
     else if (cardi == 'E')
-        mlx_data->camera->angle = 2 * PI;
+        mlx_data->camera->angle = 0;
 }
 
 static void initialize_data_for_mlx(t_game *game, t_mlx_data *mlx_data)
@@ -46,8 +46,8 @@ static void initialize_data_for_mlx(t_game *game, t_mlx_data *mlx_data)
     mlx_data->camera->pixel_x = game->camera_start_info->x * CELL_SIZE + CELL_SIZE/2;//we do + cell size/2 so that we put the player at
     mlx_data->camera->pixel_x = game->camera_start_info->y * CELL_SIZE + CELL_SIZE/2;//the center of the cell he is starting from :)
     mlx_data->camera->fov_radi = FOW * PI/180.0;
-    mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
-    mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4; 
+    // mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
+    // mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4; 
 }
 
 void    monocolor_img_buffer(mlx_image_t *image, uint32_t color)
@@ -118,19 +118,16 @@ void ft_custom_key(void *param)
     // Update angle based on rotation keys
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_LEFT))
     {
-        mlx_data->camera->angle -= 0.070;
+        mlx_data->camera->angle -= CAM_ROT;
         if (mlx_data->camera->angle < 0)
             mlx_data->camera->angle += 2 * PI;
     }
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_RIGHT))
     {
-        mlx_data->camera->angle += 0.070;
+        mlx_data->camera->angle += CAM_ROT;
         if (mlx_data->camera->angle > 2 * PI)
             mlx_data->camera->angle -= 2 * PI;
     }
-
-    mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
-    mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4;
 
     printf("the angle radiants of the player %lf and in grades %lf\n", mlx_data->camera->angle, mlx_data->camera->angle * 180 / PI);
     printf("the pdx is: %lf and the pdy is %lf\n", mlx_data->camera->pdx, mlx_data->camera->pdy);
@@ -141,24 +138,24 @@ void ft_custom_key(void *param)
 
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_W))
     {
-        move_x = -cos(mlx_data->camera->angle) * 4;
-        move_y = -sin(mlx_data->camera->angle) * 4;
+		move_x = cos(mlx_data->camera->angle) * CAM_SPEED;
+		move_y = sin(mlx_data->camera->angle) * CAM_SPEED;
         
     }
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_S))
     {
-        move_x = cos(mlx_data->camera->angle) * 4;
-        move_y = sin(mlx_data->camera->angle) * 4;
+        move_x = -cos(mlx_data->camera->angle) * CAM_SPEED;
+        move_y = -sin(mlx_data->camera->angle) * CAM_SPEED;
     }
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_A))
     {
-        move_x = -sin(mlx_data->camera->angle) * 4;
-        move_y = cos(mlx_data->camera->angle) * 4;
+        move_x = sin(mlx_data->camera->angle) * CAM_SPEED;
+        move_y = -cos(mlx_data->camera->angle) * CAM_SPEED;
     }
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_D))
     {
-        move_x = sin(mlx_data->camera->angle) * 4;
-        move_y = -cos(mlx_data->camera->angle) * 4;
+        move_x = -sin(mlx_data->camera->angle) * CAM_SPEED;
+        move_y = cos(mlx_data->camera->angle) * CAM_SPEED;
     }
 
     // Update player position
