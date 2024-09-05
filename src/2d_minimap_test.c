@@ -129,11 +129,10 @@ void ft_custom_key(void *param)
             mlx_data->camera->angle -= 2 * PI;
     }
 
-    // Recalculate direction vector based on updated angle
     mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
     mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4;
 
-    printf("the angle of the player %lf\n", mlx_data->camera->angle);
+    printf("the angle radiants of the player %lf and in grades %lf\n", mlx_data->camera->angle, mlx_data->camera->angle * 180 / PI);
     printf("the pdx is: %lf and the pdy is %lf\n", mlx_data->camera->pdx, mlx_data->camera->pdy);
 
     int new_x_test = player->instances[0].x;
@@ -142,7 +141,6 @@ void ft_custom_key(void *param)
     float move_x = 0;
     float move_y = 0;
 
-    // Calculate movement based on key pressed
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_W))
     {
         move_x = -cos(mlx_data->camera->angle) * 4;

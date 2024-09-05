@@ -453,9 +453,9 @@
 // 	t_data *dt = calloc(1, sizeof(t_data)); // init the data structure
 // 	dt->map2d = calloc(10, sizeof(char *)); // init the map
 // 	dt->map2d[0] = strdup("1111111111111111111111111"); //fill the map
-// 	dt->map2d[1] = strdup("1000000000000000000100001");
-// 	dt->map2d[2] = strdup("1001000000000P00000000001");
-// 	dt->map2d[3] = strdup("1001000000000000001000001");
+// 	dt->map2d[1] = strdup("1111111111111111111111111");
+// 	dt->map2d[2] = strdup("1001000000100P10000000001");
+// 	dt->map2d[3] = strdup("1001000000101100001000001");
 // 	dt->map2d[4] = strdup("1001000000000000001000001");
 // 	dt->map2d[5] = strdup("1001000000111110111100001");
 // 	dt->map2d[6] = strdup("1001000000000000001000001");
