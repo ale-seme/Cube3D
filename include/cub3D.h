@@ -169,6 +169,7 @@ typedef struct s_game
  * @param image_walls Ptr to the image struct for the walls (at the moment will be filled only with same pixels color instead of a texture)
  * @param image_floor Ptr to the image struct for the floor
  * @param image_cealing Ptr to the image struct for the cealing
+ * @param main_image	Ptr to the main image buffer where to draw stuff
  * @param game Ptr to the game main struct 
  * @param camera Ptr to the camera(player) struct
  * @param ray Ptr to the ray structure
@@ -179,6 +180,7 @@ typedef struct s_mlx_data
 	mlx_image_t	*image_walls; //for now instead of the textures we get form the parsing just images who's pixels we color
 	mlx_image_t *image_player; // same for the player, for the 2d map we need for ex a 5x5 image that whose pixels we color
 	mlx_image_t *image_floor; //this will be black for the 2d test minimap 
+	mlx_image_t	*main_image; //this is the main image where the game will be drawn
 	mlx_image_t *image_cealing; //this for now doesn't exists for the 2D minimap
 	t_game		*game; //simply a pointer to the game struct
 	t_camera	*camera; // a pointer to the camera information gethered during the parsing(is the player)

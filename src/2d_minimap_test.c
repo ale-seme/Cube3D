@@ -65,14 +65,20 @@ static void prepare_images_buffers(t_mlx_data *mlx_data)
 {
     int adj_size = CELL_SIZE - 1;
 
+    mlx_data->main_image = mlx_new_image(mlx_data->mlx, SCREEN_WIDTH, SCREEN_HEIGHT);
     mlx_data->image_walls = mlx_new_image(mlx_data->mlx, adj_size, adj_size); //having 31 instead of 32 allows a grey grid to automaticaly pop-up
     mlx_data->image_floor = mlx_new_image(mlx_data->mlx, adj_size, adj_size); // when we send the images to window with an offset of 32
     monocolor_img_buffer(mlx_data->image_walls, 0xFFFFFFFF); //we can change easly i liked the black-white combinaiton
     monocolor_img_buffer(mlx_data->image_floor, 0x000000FF); //simply coloring the images before bringing them to window
 
-    mlx_data->image_player = mlx_new_image(mlx_data->mlx, 4, 4); //i choose 4x4 because it fits well with the map and power of 2
-    monocolor_img_buffer(mlx_data->image_player, 0x00FF00FF);
+    // mlx_data->image_player = mlx_new_image(mlx_data->mlx, 4, 4); //i choose 4x4 because it fits well with the map and power of 2
+    // monocolor_img_buffer(mlx_data->image_player, 0x00FF00FF);
     
+    //TESTING PLAYER AS A 1PIXEL IMAGE
+
+    // mlx_data->image_player = mlx_new_image(mlx_data->mlx, 1, 1); //i choose 4x4 because it fits well with the map and power of 2
+    // monocolor_img_buffer(mlx_data->image_player, 0x00FF00FF);
+
     //below an working example of what we would do to bring a texture instead of colored pixels
     // mlx_texture_t *cust_texture = mlx_load_png("/home/ale/Cube3D/textures_ids/water_wall.png");
     // mlx_data.image_walls = mlx_texture_to_image(mlx_data.mlx, cust_texture);
@@ -82,6 +88,7 @@ static void display_2d_map(t_mlx_data *mlx_data)
 {
     int y = 0;
     int x = 0;
+    mlx_image_to_window(mlx_data->mlx, mlx_data->main_image, 0, 0);
     while(mlx_data->game->working_map[y])
     {
         x = 0;
@@ -105,7 +112,20 @@ static void display_player(t_mlx_data *mlx_data)
 {
     t_game *game = mlx_data->game;
 
-    mlx_image_to_window(mlx_data->mlx, mlx_data->image_player, game->camera_start_info->x * CELL_SIZE + CELL_SIZE/2,\
+    int count = 0;
+    int x, y;
+
+    x = y = 350;
+
+    while(count++ < 100)
+    {
+        mlx_put_pixel(mlx_data->main_image,  x++, y++, 0xFFFFFFFF);
+        //mlx_put_pixel(mlx_data->main_image,  game->camera_start_info->pixel_x++, game->camera_start_info->pixel_y, 0xFFFFFFFF);
+    }
+    //printf("the pixel x map of the plater is %d and the y is %d\n", game->camera_start_info->x, game->camera_start_info->y);
+    
+    
+    //mlx_image_to_window(mlx_data->mlx, mlx_data->image_player, game->camera_start_info->x * CELL_SIZE + CELL_SIZE/2,\
     game->camera_start_info->y * CELL_SIZE + CELL_SIZE/2); //i chose 4x4 because it's still a power of 2 and fits well with the cell size
     //also we do + cell size/2 so that we put the player at the center of the cell he is starting from :)
 }
@@ -113,7 +133,8 @@ static void display_player(t_mlx_data *mlx_data)
 void ft_custom_key(void *param)
 {
     t_mlx_data *mlx_data = (t_mlx_data *)param;
-    mlx_image_t *player = mlx_data->image_player;
+    
+    //mlx_image_t *player = mlx_data->image_player;
 
     // Update angle based on rotation keys
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_LEFT))
@@ -159,13 +180,13 @@ void ft_custom_key(void *param)
     }
 
     // Update player position
-    int new_x = roundf(player->instances[0].x + move_x);
-    int new_y = roundf(player->instances[0].y + move_y);
+    int new_x = roundf(mlx_data->camera->pixel_x + move_x);
+    int new_y = roundf(mlx_data->camera->pixel_y + move_y);
 
     if (mlx_data->game->working_map[new_y / CELL_SIZE][new_x / CELL_SIZE] != '1')
     {
-        player->instances[0].x = new_x;
-        player->instances[0].y = new_y;
+        mlx_data->camera->pixel_x = new_x;
+        mlx_data->camera->pixel_y = new_y;
     }
 
     // Close window (escape key)
@@ -192,7 +213,7 @@ int main(int argc, char **argv)
     prepare_images_buffers(&mlx_data);
     display_2d_map(&mlx_data);
     display_player(&mlx_data);
-    mlx_loop_hook(mlx_data.mlx, ft_custom_key, &mlx_data);
+    //mlx_loop_hook(mlx_data.mlx, ft_custom_key, &mlx_data);
     mlx_loop(mlx_data.mlx);
 	return (0);
 }
