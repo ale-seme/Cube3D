@@ -96,11 +96,19 @@ static void display_2d_map(t_mlx_data *mlx_data)
         {
             if (mlx_data->game->working_map[y][x] == '1')
             {
-                mlx_image_to_window(mlx_data->mlx, mlx_data->image_walls, x *CELL_SIZE, y *CELL_SIZE);
+                for(int m = 0; m < CELL_SIZE -1; m++)
+                {
+                    for(int f = 0; f < CELL_SIZE - 1; f++)
+                        mlx_put_pixel(mlx_data->main_image, x * CELL_SIZE + f, y *CELL_SIZE + m, 0xFFFFFFFF);
+                }
+                //mlx_image_to_window(mlx_data->mlx, mlx_data->image_walls, x *CELL_SIZE, y *CELL_SIZE);
             }
             else if (mlx_data->game->working_map[y][x] == '0')
             {
-                mlx_image_to_window(mlx_data->mlx, mlx_data->image_floor, x*CELL_SIZE, y *CELL_SIZE);
+                for(int z = 0; z < CELL_SIZE -1; z++)
+                    for(int r = 0; r < CELL_SIZE - 1; r++)
+                        mlx_put_pixel(mlx_data->main_image, x * CELL_SIZE + r, y * CELL_SIZE + z, 0x000000FF);
+                //mlx_image_to_window(mlx_data->mlx, mlx_data->image_floor, x*CELL_SIZE, y *CELL_SIZE);
             }
             x++;
         }
@@ -112,16 +120,8 @@ static void display_player(t_mlx_data *mlx_data)
 {
     t_game *game = mlx_data->game;
 
-    int count = 0;
-    int x, y;
 
-    x = y = 350;
-
-    while(count++ < 100)
-    {
-        mlx_put_pixel(mlx_data->main_image,  x++, y++, 0xFFFFFFFF);
-        //mlx_put_pixel(mlx_data->main_image,  game->camera_start_info->pixel_x++, game->camera_start_info->pixel_y, 0xFFFFFFFF);
-    }
+mlx_put_pixel(mlx_data->main_image,  game->camera_start_info->pixel_x++, game->camera_start_info->pixel_y, 0xFFFFFFFF);
     //printf("the pixel x map of the plater is %d and the y is %d\n", game->camera_start_info->x, game->camera_start_info->y);
     
     
