@@ -120,10 +120,8 @@ static void display_player(t_mlx_data *mlx_data)
 {
     t_game *game = mlx_data->game;
 
-
-    mlx_put_pixel(mlx_data->main_image, 350, 350, 0x0000FFFF);
     printf("pixel x %f pixel y %f\n", game->camera_start_info->pixel_x, game->camera_start_info->pixel_y);
-    mlx_put_pixel(mlx_data->main_image,  game->camera_start_info->pixel_x, game->camera_start_info->pixel_y, 0x0000FFFF);
+    mlx_put_pixel(mlx_data->main_image,  game->camera_start_info->pixel_x, game->camera_start_info->pixel_y, 0x0FF000FF);
     //printf("the pixel x map of the plater is %d and the y is %d\n", game->camera_start_info->x, game->camera_start_info->y);
     
     
@@ -136,9 +134,17 @@ void ft_custom_key(void *param)
 {
     t_mlx_data *mlx_data = (t_mlx_data *)param;
     
-    //mlx_image_t *player = mlx_data->image_player;
+    
+    mlx_delete_image(mlx_data->mlx, mlx_data->main_image);
 
     // Update angle based on rotation keys
+
+    
+    mlx_data->main_image = mlx_new_image(mlx_data->mlx, SCREEN_WIDTH, SCREEN_HEIGHT);
+    display_2d_map(mlx_data);
+    display_player(mlx_data);
+
+
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_LEFT))
     {
         mlx_data->camera->angle -= CAM_ROT;
@@ -153,7 +159,6 @@ void ft_custom_key(void *param)
     }
 
     printf("the angle radiants of the player %lf and in grades %lf\n", mlx_data->camera->angle, mlx_data->camera->angle * 180 / PI);
-    printf("the pdx is: %lf and the pdy is %lf\n", mlx_data->camera->pdx, mlx_data->camera->pdy);
 
 
     float move_x = 0;
@@ -189,6 +194,7 @@ void ft_custom_key(void *param)
     {
         mlx_data->camera->pixel_x = new_x;
         mlx_data->camera->pixel_y = new_y;
+        mlx_put_pixel(mlx_data->main_image, new_x, new_y, 0x00FF00FF);
     }
 
     // Close window (escape key)
@@ -213,9 +219,9 @@ int main(int argc, char **argv)
     initialize_data_for_mlx(&game, &mlx_data);
     mlx_data.mlx = mlx_init(SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D", true);
     prepare_images_buffers(&mlx_data);
-    display_2d_map(&mlx_data);
-    display_player(&mlx_data);
-    //mlx_loop_hook(mlx_data.mlx, ft_custom_key, &mlx_data);
+    // display_2d_map(&mlx_data);
+    // display_player(&mlx_data);
+    mlx_loop_hook(mlx_data.mlx, ft_custom_key, &mlx_data);
     mlx_loop(mlx_data.mlx);
 	return (0);
 }
