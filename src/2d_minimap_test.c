@@ -44,7 +44,7 @@ static void initialize_data_for_mlx(t_game *game, t_mlx_data *mlx_data)
     mlx_data->camera = game->camera_start_info;
     get_angle(mlx_data);
     mlx_data->camera->pixel_x = game->camera_start_info->x * CELL_SIZE + CELL_SIZE/2;//we do + cell size/2 so that we put the player at
-    mlx_data->camera->pixel_x = game->camera_start_info->y * CELL_SIZE + CELL_SIZE/2;//the center of the cell he is starting from :)
+    mlx_data->camera->pixel_y = game->camera_start_info->y * CELL_SIZE + CELL_SIZE/2;//the center of the cell he is starting from :)
     mlx_data->camera->fov_radi = FOW * PI/180.0;
     // mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
     // mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4; 
@@ -121,7 +121,9 @@ static void display_player(t_mlx_data *mlx_data)
     t_game *game = mlx_data->game;
 
 
-mlx_put_pixel(mlx_data->main_image,  game->camera_start_info->pixel_x++, game->camera_start_info->pixel_y, 0xFFFFFFFF);
+    mlx_put_pixel(mlx_data->main_image, 350, 350, 0x0000FFFF);
+    printf("pixel x %f pixel y %f\n", game->camera_start_info->pixel_x, game->camera_start_info->pixel_y);
+    mlx_put_pixel(mlx_data->main_image,  game->camera_start_info->pixel_x, game->camera_start_info->pixel_y, 0x0000FFFF);
     //printf("the pixel x map of the plater is %d and the y is %d\n", game->camera_start_info->x, game->camera_start_info->y);
     
     
