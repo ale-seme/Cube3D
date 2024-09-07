@@ -88,7 +88,6 @@ static void display_2d_map(t_mlx_data *mlx_data)
 {
     int y = 0;
     int x = 0;
-    mlx_image_to_window(mlx_data->mlx, mlx_data->main_image, 0, 0);
     while(mlx_data->game->working_map[y])
     {
         x = 0;
@@ -133,16 +132,6 @@ static void display_player(t_mlx_data *mlx_data)
 void ft_custom_key(void *param)
 {
     t_mlx_data *mlx_data = (t_mlx_data *)param;
-    
-    
-    mlx_delete_image(mlx_data->mlx, mlx_data->main_image);
-
-    // Update angle based on rotation keys
-
-    
-    mlx_data->main_image = mlx_new_image(mlx_data->mlx, SCREEN_WIDTH, SCREEN_HEIGHT);
-    display_2d_map(mlx_data);
-    display_player(mlx_data);
 
 
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_LEFT))
@@ -204,7 +193,18 @@ void ft_custom_key(void *param)
     }
 }
 
-
+void    draw_everything(void *param)
+{
+    t_mlx_data *mlx_data;
+    
+    mlx_data = (t_mlx_data *)param;
+    mlx_delete_image(mlx_data->mlx, mlx_data->main_image);
+    mlx_data->main_image = mlx_new_image(mlx_data->mlx, SCREEN_WIDTH, SCREEN_HEIGHT);
+    mlx_image_to_window(mlx_data->mlx, mlx_data->main_image, 0, 0);
+    display_2d_map(mlx_data);
+    display_player(mlx_data);
+    //function to cast all the rays
+}
 
 int main(int argc, char **argv)
 {
@@ -219,8 +219,7 @@ int main(int argc, char **argv)
     initialize_data_for_mlx(&game, &mlx_data);
     mlx_data.mlx = mlx_init(SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D", true);
     prepare_images_buffers(&mlx_data);
-    // display_2d_map(&mlx_data);
-    // display_player(&mlx_data);
+    mlx_loop_hook(mlx_data.mlx, draw_everything, &mlx_data);
     mlx_loop_hook(mlx_data.mlx, ft_custom_key, &mlx_data);
     mlx_loop(mlx_data.mlx);
 	return (0);
