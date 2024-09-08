@@ -71,9 +71,15 @@
 
 typedef struct s_ray
 {
-	double	ray_angle;
-	double	wall_dst;
-	bool	is_met;
+	int		ray_n;
+
+	float	ray_angle;
+	float	wall_dst;
+	float	v_inter_x;//need to check if inter
+	float	v_inter_y;
+	float	o_inter_x;
+	float	o_inter_y;
+	bool	wall_met;
 } t_ray;
 
 
