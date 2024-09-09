@@ -72,13 +72,13 @@
 typedef struct s_ray
 {
 	int		ray_n;
-
-	float	ray_angle;
-	float	wall_dst;
+	float	unit_angle;
+	float	current_angle;
 	float	v_inter_x;//need to check if inter
 	float	v_inter_y;
 	float	o_inter_x;
 	float	o_inter_y;
+	float	wall_dst;
 	bool	wall_met;
 } t_ray;
 
@@ -218,4 +218,6 @@ void	free_list(t_lst *lst);
 void	free_split(char **ss);
 void	free_game(t_game *game);
 
+/*raycasting*/
+void	ray_casting(t_mlx_data *mlx_data);
 #endif

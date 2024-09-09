@@ -40,19 +40,18 @@ void    get_angle(t_mlx_data *mlx_data)
 
 static void initialize_data_for_mlx(t_game *game, t_mlx_data *mlx_data)
 {
-    t_ray *ray;
 
-    ray = ft_calloc(1, sizeof(t_ray));
-    if (!ray)
+    mlx_data->ray = ft_calloc(1, sizeof(t_ray));
+    if (!mlx_data->ray)
         printf("Error\nFailed calloc for rays struct\n");
-    ray->is_met = false;
-    
+    mlx_data->ray->wall_met = false;
     mlx_data->game = game;
     mlx_data->camera = game->camera_start_info;
     get_angle(mlx_data);
     mlx_data->camera->pixel_x = game->camera_start_info->x * CELL_SIZE + CELL_SIZE/2;//we do + cell size/2 so that we put the player at
     mlx_data->camera->pixel_y = game->camera_start_info->y * CELL_SIZE + CELL_SIZE/2;//the center of the cell he is starting from :)
     mlx_data->camera->fov_radi = FOW * PI/180.0;
+    mlx_data->ray->unit_angle = mlx_data->camera->fov_radi / SCREEN_WIDTH; //this is the unit angle for each ray cast
     // mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
     // mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4; 
 }
@@ -210,7 +209,7 @@ void    draw_everything(void *param)
     mlx_image_to_window(mlx_data->mlx, mlx_data->main_image, 0, 0);
     display_2d_map(mlx_data);
     display_player(mlx_data);
-    //function to cast all the rays
+    //ray_casting(mlx_data);
 }
 
 int main(int argc, char **argv)
