@@ -217,7 +217,8 @@ int		successfull_parsing(int argc, char **argv, t_game *game);
 void	free_list(t_lst *lst);
 void	free_split(char **ss);
 void	free_game(t_game *game);
+void	free_everything(t_game *game);
 
 /*raycasting*/
-void	ray_casting(t_mlx_data *mlx_data);
+//void	ray_casting(t_mlx_data *mlx_data);
 #endif

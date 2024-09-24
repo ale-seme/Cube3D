@@ -221,7 +221,7 @@ int main(int argc, char **argv)
     game.start_list_pointer = NULL;
 	initialize_game(&game);
 	if (!successfull_parsing(argc, argv, &game))
-		return (free_list(game.start_list_pointer), free_game(&game), 1); // i still need to write a functoin to free both in one shot
+		return (free_everything(&game), 1); // i still need to write a functoin to free both in one shot
     initialize_data_for_mlx(&game, &mlx_data);
     mlx_data.mlx = mlx_init(SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D", true);
     prepare_images_buffers(&mlx_data);

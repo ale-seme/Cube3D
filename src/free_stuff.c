@@ -17,7 +17,7 @@ void	free_list(t_lst *lst)
 {
 	t_lst *temp;
 
-	while(lst)
+	while(lst != NULL)
 	{
 		temp = lst;
 		lst = lst->next;
@@ -42,6 +42,12 @@ void	free_game(t_game *game)
 	{
 		free(game->floor_rbg_array);
 	}
+}
+
+void	free_everything(t_game *game)
+{
+	free_list(game->start_list_pointer);
+	free_game(game);
 }
 
 // int main(void)
