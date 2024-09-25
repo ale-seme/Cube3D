@@ -220,5 +220,5 @@ void	free_game(t_game *game);
 void	free_everything(t_game *game);
 
 /*raycasting*/
-//void	ray_casting(t_mlx_data *mlx_data);
+void	ray_casting(t_mlx_data *mlx_data);
 #endif

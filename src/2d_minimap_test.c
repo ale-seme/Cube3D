@@ -170,9 +170,9 @@ void ft_custom_key(void *param)
         move_x = -cos(mlx_data->camera->angle) * CAM_SPEED;
         move_y = -sin(mlx_data->camera->angle) * CAM_SPEED;
     }
-    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_A))
+    if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_A)) // we apply rotation here countercoockwise of 90 degrees from the current orientatoin, we rotate the movement vector
     {
-        move_x = sin(mlx_data->camera->angle) * CAM_SPEED;
+        move_x = sin(mlx_data->camera->angle) * CAM_SPEED; // we do that like this: (x', y') = (-y, x)
         move_y = -cos(mlx_data->camera->angle) * CAM_SPEED;
     }
     if (mlx_is_key_down(mlx_data->mlx, MLX_KEY_D))
@@ -184,6 +184,8 @@ void ft_custom_key(void *param)
     // Update player position
     int new_x = roundf(mlx_data->camera->pixel_x + move_x);
     int new_y = roundf(mlx_data->camera->pixel_y + move_y);
+
+    printf("new_x rounded: %f new_y rounded: %f\n",  move_x, move_y);
 
     if (mlx_data->game->working_map[new_y / CELL_SIZE][new_x / CELL_SIZE] != '1')
     {
@@ -205,11 +207,11 @@ void    draw_everything(void *param)
     
     mlx_data = (t_mlx_data *)param;
     mlx_delete_image(mlx_data->mlx, mlx_data->main_image);
-    mlx_data->main_image = mlx_new_image(mlx_data->mlx, SCREEN_WIDTH, SCREEN_HEIGHT);
+    mlx_data->main_image = mlx_new_image(mlx_data->mlx, SCREEN_WIDTH, SCREEN_HEIGHT); //now only minimap
     mlx_image_to_window(mlx_data->mlx, mlx_data->main_image, 0, 0);
     display_2d_map(mlx_data);
     display_player(mlx_data);
-    //ray_casting(mlx_data);
+    ray_casting(mlx_data);
 }
 
 int main(int argc, char **argv)
