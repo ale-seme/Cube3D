@@ -9,18 +9,20 @@ static float normailze_angle(double angle)
 	return (angle);
 }
 
-void	get_pixel_and_sign(t_mlx_data *mlx_data, int *y_pixel, int *sign, bool b)
+void	y_inc_and_pixel(float angle, float *y_inc, int *y_add_pixel, bool b)
 {
 	if (b == true)
 	{
-		if (mlx_data->camera->angle > 0 && mlx_data->camera->angle < 2 * PI)
-			*y_pixel = CELL_SIZE;
-		else 
-			*y_pixel = -1;
-		if (mlx_data->camera->angle > PI && mlx_data->camera->angle < 3 * PI/2)
-			*sign = -1;
-		else
-			*sign = 1;
+		if (angle > 0 && angle < PI)
+		{
+			*y_inc = CELL_SIZE;
+			*y_add_pixel = CELL_SIZE;
+		}
+		else if (angle > PI && angle < 2 * PI)
+		{
+			*y_inc = -CELL_SIZE;
+			*y_add_pixel = -1;
+		}
 	}
 	else
 	{
@@ -29,33 +31,35 @@ void	get_pixel_and_sign(t_mlx_data *mlx_data, int *y_pixel, int *sign, bool b)
 
 }
 
-static void	calculate_o_intersection(t_mlx_data *mlx_data)
+float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 {
-	int		y_pixel;
-	int		sign;
-	float	x_incr;
-	float	y_incr;
+	float	x_inc;
+	float	y_inc;
+	float	inter_x;
+	float	inter_y;
+	int		y_add_pixel;
 
-	float	i_y;
-	float	i_x;
-
-	int map_inter_x;
-	int	map_inter_y;
-
-	get_pixel_and_sign(mlx_data, &y_pixel, &sign, true);
-	if (y_pixel < 0)
-		y_incr = -CELL_SIZE;
-	else
-		y_incr = CELL_SIZE;
-	x_incr = CELL_SIZE / (tan(mlx_data->camera->angle));
-	i_y = (mlx_data->camera->angle / CELL_SIZE) * CELL_SIZE + y_pixel;
-	i_x = mlx_data->camera->angle + ()
+	y_inc_and_pixel(angle, &y_inc, &y_add_pixel, true);
+	x_inc = floor(CELL_SIZE * tan(angle));
+	inter_y = floor(((mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE) + y_add_pixel);
+	inter_x = mlx_data->camera->pixel_x + inter_y * tan(angle);
+	while(!mlx_data->ray->wall_met)
+	{
+		inter_y += y_inc;
+		inter_x += x_inc;
+		if (mlx_data->game->working_map[(int)(inter_y / CELL_SIZE)][(int)(inter_x / CELL_SIZE)] == '1' || inter_x / CELL_SIZE >= mlx_data->game->n_columns);
+		{
+			mlx_data->ray->wall_met = true;
+		}
+	}
+	return (sqrt(pow(inter_x - mlx_data->camera->pixel_x, 2) + \
+	pow(inter_y - mlx_data->camera->pixel_y, 2)));
 
 }
 
 void	ray_casting(t_mlx_data *mlx_data)
 {
-	float	o_inter;
+	float	h_inter;
 	float	v_inter;
 	int	which_ray;
 
@@ -64,15 +68,17 @@ void	ray_casting(t_mlx_data *mlx_data)
 	printf("Current angle of the ray value in radi %lf\n", mlx_data->ray->current_angle * 180 / PI);
 	while(which_ray < SCREEN_WIDTH)
 	{
-		o_inter = calculate_o_inter(mlx_data, mlx_data->ray->current_angle);
-		v_inter = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
-		if (o_inter > v_inter)
+		h_inter = calculate_h_inter(mlx_data, mlx_data->ray->current_angle);
+		//v_inter = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
+		v_inter = 100000;
+		if (h_inter > v_inter)
 			mlx_data->ray->wall_dst = v_inter;
 		else
-			mlx_data->ray->wall_dst = o_inter;
+			mlx_data->ray->wall_dst = h_inter;
 		//WRITE A FUNCTOIN TO DRAW THE CURRENT RAY AND KEEP IT
 		//something to draw the walls
 		which_ray++;
 		mlx_data->ray->current_angle += mlx_data->ray->unit_angle; //I need to double check if this is the case
 	}
+	printf("last ray horizontal wal intersection %lf\n", h_inter);
 }
