@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include "fcntl.h"
 #include <math.h>
+#include <stdbool.h>
 #include "../MLX42/include/MLX42/MLX42.h" //you have to do make download mlx_42 and will work
 
 # define CARDINALS "NSWE" //string containing the cardinals that are allowed

@@ -9,15 +9,48 @@ static float normailze_angle(double angle)
 	return (angle);
 }
 
+void	get_pixel_and_sign(t_mlx_data *mlx_data, int *y_pixel, int *sign, bool b)
+{
+	if (b == true)
+	{
+		if (mlx_data->camera->angle > 0 && mlx_data->camera->angle < 2 * PI)
+			*y_pixel = CELL_SIZE;
+		else 
+			*y_pixel = -1;
+		if (mlx_data->camera->angle > PI && mlx_data->camera->angle < 3 * PI/2)
+			*sign = -1;
+		else
+			*sign = 1;
+	}
+	else
+	{
+		printf("hello");
+	}
+
+}
+
 static void	calculate_o_intersection(t_mlx_data *mlx_data)
 {
-	int	one_x_pixel;
-	int	one_y_pixel;
+	int		y_pixel;
+	int		sign;
+	float	x_incr;
+	float	y_incr;
 
-	one_x_pixel = 0;
-	one_y_pixel = 0;
+	float	i_y;
+	float	i_x;
 
-	if (mlx_data->camera->angle >)
+	int map_inter_x;
+	int	map_inter_y;
+
+	get_pixel_and_sign(mlx_data, &y_pixel, &sign, true);
+	if (y_pixel < 0)
+		y_incr = -CELL_SIZE;
+	else
+		y_incr = CELL_SIZE;
+	x_incr = CELL_SIZE / (tan(mlx_data->camera->angle));
+	i_y = (mlx_data->camera->angle / CELL_SIZE) * CELL_SIZE + y_pixel;
+	i_x = mlx_data->camera->angle + ()
+
 }
 
 void	ray_casting(t_mlx_data *mlx_data)
@@ -33,7 +66,6 @@ void	ray_casting(t_mlx_data *mlx_data)
 	{
 		o_inter = calculate_o_inter(mlx_data, mlx_data->ray->current_angle);
 		v_inter = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
-		
 		if (o_inter > v_inter)
 			mlx_data->ray->wall_dst = v_inter;
 		else
