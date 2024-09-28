@@ -9,33 +9,51 @@ static float normailze_angle(double angle)
 	return (angle);
 }
 
-void	y_inc_and_pixel(float angle, float *y_inc, int *y_add_pixel, bool b)
+void	inc_and_pixel(float angle, float *inc, int *add_pixel, bool b)
 {
 	if (b == true)
 	{
 		if (angle > 0 && angle < PI)
 		{
-			*y_inc = CELL_SIZE;
-			*y_add_pixel = CELL_SIZE;
+			*inc = CELL_SIZE;
+			*add_pixel = CELL_SIZE;
 		}
 		else if (angle > PI && angle < 2 * PI)
 		{
-			*y_inc = -CELL_SIZE;
-			*y_add_pixel = -1;
+			*inc = -CELL_SIZE;
+			*add_pixel = -1;
 		}
 	}
 	else
 	{
-		printf("hello");
+		if (!(PI && angle < 3 * PI / 2))
+		{
+			*inc = CELL_SIZE;
+			*add_pixel = CELL_SIZE;
+		}
+		else if (angle > PI && angle < 3 * PI/2)
+		{
+			*inc = -CELL_SIZE;
+			*add_pixel = -1;
+		}
 	}
-
 }
 
-int	wall_collision(t_mlx_data *mlx_data, int inter_y, int inter_x)
+/*looks a confusing design but I want to avoid to use floor and maybe save some computation if the pixels are negative*/
+int	wall_collision(t_mlx_data *mlx_data, float inter_y, float inter_x)
 {
+	int	map_y;
+	int	map_x;
+
 	if (inter_y < 0 || inter_x < 0)
+		return (0);
+	map_y = (int)(inter_y / CELL_SIZE);
+	map_x = (int)(inter_x / CELL_SIZE);
+	if (map_y >= mlx_data->game->n_rows || map_x >= mlx_data->game->n_columns)
+		return (0);
+	if (mlx_data->game->working_map[map_y][map_x] == '1')
 		return (1);
-	if 
+	return (0);
 }
 
 float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
@@ -46,24 +64,49 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 	float	inter_y;
 	int		y_add_pixel;
 
-	y_inc_and_pixel(angle, &y_inc, &y_add_pixel, true);
+	inc_and_pixel(angle, &y_inc, &y_add_pixel, true);
 	x_inc = floor(CELL_SIZE * tan(angle));
 	inter_y = floor(((mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE) + y_add_pixel);
-	inter_x = mlx_data->camera->pixel_x + inter_y * tan(angle);
-	while(!mlx_data->ray->wall_met)
+	inter_x = mlx_data->camera->pixel_x + (inter_y - mlx_data->camera->pixel_y) / tan(angle);
+	while(!wall_collision(mlx_data, inter_y, inter_x))
 	{
-		if (mlx_data->game->working_map[(int)(inter_y / CELL_SIZE)][(int)(inter_x / CELL_SIZE)] == '1' || inter_x / CELL_SIZE >= mlx_data->game->n_columns);
-		{
-			mlx_data->ray->wall_met = true;
-		}
 		inter_y += y_inc;
 		inter_x += x_inc;
 	}
-	//return (fabs((inter_x - mlx_data->camera->pixel_x) * lookup_cos(angle))); for now we keep square
+	mlx_data->ray->h_hit_x = inter_x;//i will add this but could delete if usless
+	mlx_data->ray->h_hit_y = inter_x;//same as here
+
+	//return (fabs((inter_x - mlx_data->camera->pixel_x) * lookup_cos(angle))); for now we keep square but this is a most efficient method
 	return (sqrt(pow(inter_x - mlx_data->camera->pixel_x, 2) + \
 	pow(inter_y - mlx_data->camera->pixel_y, 2)));
 
 }
+
+// float	calculate_v_inter(t_mlx_data *mlx_data, float angle)
+// {
+// 	float	x_inc;
+// 	float	y_inc;
+// 	float	inter_x;
+// 	float	inter_y;
+// 	int		x_add_pixel;
+
+// 	inc_and_pixel(angle, &x_inc, &x_add_pixel, false);
+// 	y_inc = floor(CELL_SIZE * tan(angle));
+// 	inter_x = floor(((mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE) + x_add_pixel);
+// 	inter_y = mlx_data->camera->pixel_y + inter_x / tan(angle);
+// 	while(!wall_collision(mlx_data, inter_y, inter_x))
+// 	{
+// 		inter_y += y_inc;
+// 		inter_x += x_inc;
+// 	}
+// 	mlx_data->ray->h_hit_x = inter_x;//i will add this but could delete if usless
+// 	mlx_data->ray->h_hit_y = inter_x;//same as here
+	
+// 	//return (fabs((inter_x - mlx_data->camera->pixel_x) * lookup_cos(angle))); for now we keep square but this is a most efficient method
+// 	return (sqrt(pow(inter_x - mlx_data->camera->pixel_x, 2) + \
+// 	pow(inter_y - mlx_data->camera->pixel_y, 2)));
+
+// }
 
 void	ray_casting(t_mlx_data *mlx_data)
 {
@@ -77,7 +120,8 @@ void	ray_casting(t_mlx_data *mlx_data)
 	while(which_ray < SCREEN_WIDTH)
 	{
 		h_inter = calculate_h_inter(mlx_data, mlx_data->ray->current_angle);
-		v_inter = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
+		v_inter = 1000000;
+		//v_inter = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
 		if (h_inter > v_inter)
 			mlx_data->ray->wall_dst = v_inter;
 		else

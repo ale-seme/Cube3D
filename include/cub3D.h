@@ -75,10 +75,10 @@ typedef struct s_ray
 	int		ray_n;
 	float	unit_angle;
 	float	current_angle;
-	float	v_inter_x;//need to check if inter
-	float	v_inter_y;
-	float	o_inter_x;
-	float	o_inter_y;
+	float	v_hit_x;//need to check if inter
+	float	v_hit_y;
+	float	h_hit_x;
+	float	h_hit_y;
 	float	wall_dst;
 	bool	wall_met;
 } t_ray;
