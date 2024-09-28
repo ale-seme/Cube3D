@@ -31,6 +31,13 @@ void	y_inc_and_pixel(float angle, float *y_inc, int *y_add_pixel, bool b)
 
 }
 
+int	wall_collision(t_mlx_data *mlx_data, int inter_y, int inter_x)
+{
+	if (inter_y < 0 || inter_x < 0)
+		return (1);
+	if 
+}
+
 float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 {
 	float	x_inc;
@@ -45,13 +52,14 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 	inter_x = mlx_data->camera->pixel_x + inter_y * tan(angle);
 	while(!mlx_data->ray->wall_met)
 	{
-		inter_y += y_inc;
-		inter_x += x_inc;
 		if (mlx_data->game->working_map[(int)(inter_y / CELL_SIZE)][(int)(inter_x / CELL_SIZE)] == '1' || inter_x / CELL_SIZE >= mlx_data->game->n_columns);
 		{
 			mlx_data->ray->wall_met = true;
 		}
+		inter_y += y_inc;
+		inter_x += x_inc;
 	}
+	//return (fabs((inter_x - mlx_data->camera->pixel_x) * lookup_cos(angle))); for now we keep square
 	return (sqrt(pow(inter_x - mlx_data->camera->pixel_x, 2) + \
 	pow(inter_y - mlx_data->camera->pixel_y, 2)));
 
@@ -69,8 +77,7 @@ void	ray_casting(t_mlx_data *mlx_data)
 	while(which_ray < SCREEN_WIDTH)
 	{
 		h_inter = calculate_h_inter(mlx_data, mlx_data->ray->current_angle);
-		//v_inter = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
-		v_inter = 100000;
+		v_inter = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
 		if (h_inter > v_inter)
 			mlx_data->ray->wall_dst = v_inter;
 		else

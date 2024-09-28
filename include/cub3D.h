@@ -222,4 +222,9 @@ void	free_everything(t_game *game);
 
 /*raycasting*/
 void	ray_casting(t_mlx_data *mlx_data);
+
+/*init trig tables*/
+void init_trig_tables(void);
+float lookup_sin(float angle);
+float lookup_cos(float angle);
 #endif

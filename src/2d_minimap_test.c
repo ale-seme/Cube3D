@@ -224,6 +224,7 @@ int main(int argc, char **argv)
 	initialize_game(&game);
 	if (!successfull_parsing(argc, argv, &game))
 		return (free_everything(&game), 1); // i still need to write a functoin to free both in one shot
+    init_trig_tables();
     initialize_data_for_mlx(&game, &mlx_data);
     mlx_data.mlx = mlx_init(SCREEN_WIDTH, SCREEN_HEIGHT, "cub3D", true);
     prepare_images_buffers(&mlx_data);
