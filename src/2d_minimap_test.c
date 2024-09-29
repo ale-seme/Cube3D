@@ -44,7 +44,6 @@ static void initialize_data_for_mlx(t_game *game, t_mlx_data *mlx_data)
     mlx_data->ray = ft_calloc(1, sizeof(t_ray));
     if (!mlx_data->ray)
         printf("Error\nFailed calloc for rays struct\n");
-    mlx_data->ray->wall_met = false;
     mlx_data->game = game;
     mlx_data->camera = game->camera_start_info;
     get_angle(mlx_data);
