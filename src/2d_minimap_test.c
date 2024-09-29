@@ -184,7 +184,7 @@ void ft_custom_key(void *param)
     int new_x = roundf(mlx_data->camera->pixel_x + move_x);
     int new_y = roundf(mlx_data->camera->pixel_y + move_y);
 
-    printf("new_x rounded: %f new_y rounded: %f\n",  move_x, move_y);
+    //printf("new_x rounded: %f new_y rounded: %f\n",  move_x, move_y);
 
     if (mlx_data->game->working_map[new_y / CELL_SIZE][new_x / CELL_SIZE] != '1')
     {

@@ -1,6 +1,6 @@
 #include "cub3D.h"
 
-static float normailze_angle(double angle)
+static float normailze_angle(float angle)
 {
 	if (angle < 0)
 		angle += (2 * PI);
@@ -69,8 +69,8 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 	int		y_add_pixel;
 
 	inc_and_pixel(angle, &y_inc, &y_add_pixel, true);
-	x_inc = CELL_SIZE / tan(angle);
 	inter_y = floor(((mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE) + y_add_pixel);
+	x_inc = CELL_SIZE / tan(angle);
 	inter_x = mlx_data->camera->pixel_x + (inter_y - mlx_data->camera->pixel_y) / tan(angle);
 	while(!wall_hit_or_out_bounds(mlx_data, inter_y, inter_x))
 	{
@@ -81,7 +81,7 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 	// printf("current inter_x %lf, and current inter_y %lf\n", inter_x, inter_y);
 	mlx_data->ray->h_hit_x = inter_x;//i will add this but could delete if usless
 	mlx_data->ray->h_hit_y = inter_y;//same as here
-	if (mlx_data->ray->ray_n = SCREEN_WIDTH/2)
+	if (mlx_data->ray->ray_n == SCREEN_WIDTH/2)
 		printf("value if y inter horiz: %lf, value of x inter horiz %lf\n", inter_y, inter_x);
 
 	//return (fabs((inter_x - mlx_data->camera->pixel_x) * lookup_cos(angle))); //for now we keep square but this is a most efficient method
@@ -97,10 +97,19 @@ float	calculate_v_inter(t_mlx_data *mlx_data, float angle)
 	float	inter_y;
 	int		x_add_pixel;
 
+
 	inc_and_pixel(angle, &x_inc, &x_add_pixel, false);
-	y_inc = floor(CELL_SIZE * tan(angle));
+	y_inc = CELL_SIZE * tan(angle);
 	inter_x = floor(((mlx_data->camera->pixel_x / CELL_SIZE) * CELL_SIZE) + x_add_pixel);
 	inter_y = mlx_data->camera->pixel_y + (inter_x - mlx_data->camera->pixel_x) * tan(angle);
+	
+    if (mlx_data->ray->ray_n == SCREEN_WIDTH / 2)
+    {
+        printf("Initial value of y inter vert: %lf, initial value of x inter vert: %lf\n", inter_y, inter_x);
+		printf("HAHAHAHAH %lf\n", y_inc);
+    }
+
+	
 	while(!wall_hit_or_out_bounds(mlx_data, inter_y, inter_x))
 	{
 		inter_y += y_inc;
@@ -108,7 +117,10 @@ float	calculate_v_inter(t_mlx_data *mlx_data, float angle)
 	}
 	mlx_data->ray->v_hit_x = inter_x;//i will add this but could delete if usless
 	mlx_data->ray->v_hit_y = inter_y;//same as here
-	
+ 	if (mlx_data->ray->ray_n == SCREEN_WIDTH / 2)
+    {
+        printf("Final value of y inter vert: %lf, final value of x inter vert: %lf\n", inter_y, inter_x);
+    }
 	//return (fabs((inter_y - mlx_data->camera->pixel_y) * lookup_sin(angle))); for now we keep square but this is a most efficient method
 	return (sqrt(pow(inter_x - mlx_data->camera->pixel_x, 2) + \
 	pow(inter_y - mlx_data->camera->pixel_y, 2)));
@@ -165,9 +177,9 @@ void	ray_casting(t_mlx_data *mlx_data)
 	int	which_ray;
 	int flag = 0;
 
-	which_ray = 0;
+	mlx_data->ray->ray_n = 0;
 	mlx_data->ray->current_angle = normailze_angle(mlx_data->camera->angle - (mlx_data->camera->fov_radi / 2));
-	while(which_ray < SCREEN_WIDTH)
+	while(mlx_data->ray->ray_n < SCREEN_WIDTH)
 	{
 		//printf("Current angle of the ray value in grades %lf\n", mlx_data->ray->current_angle * 180 / PI);
 		h_inter_dist = calculate_h_inter(mlx_data, mlx_data->ray->current_angle);
@@ -181,7 +193,7 @@ void	ray_casting(t_mlx_data *mlx_data)
 			mlx_data->ray->wall_dst = v_inter_dist;
 		//WRITE A FUNCTOIN TO DRAW THE CURRENT RAY AND KEEP IT
 		//something to draw the walls
-		which_ray++;
+		mlx_data->ray->ray_n++;
 		if (flag)
 		{
 			// printf("current wall distance is: %lf\n", h_inter_dist);

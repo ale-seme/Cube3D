@@ -1,0 +1,2169 @@
+temp: /home/ale/Cube3D/textures_ids/nord.txt
+temp: /home/ale/Cube3D/textures_ids/south.txt
+temp: /home/ale/Cube3D/textures_ids/west.txt
+temp: /home/ale/Cube3D/textures_ids/east.txt
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.978836
+Initial value of y inter vert: -385227.687500, initial value of x inter vert: 176.000000
+HAHAHAHAH -385627.687500
+Final value of y inter vert: -385227.687500, final value of x inter vert: 176.000000
+last day lenght choosen  185.292297
+the angle radiants of the player 4.712389 and in grades 270.000008
+pixel x 144.000000 pixel y 400.000000
+value if y inter horiz: 143.000000, value of x inter horiz 143.9788
