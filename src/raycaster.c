@@ -1,6 +1,6 @@
 #include "cub3D.h"
-
-static float normailze_angle(float angle)
+#define MX_TAN 1200
+static float normalize_angle(float angle)
 {
 	if (angle < 0)
 		angle += (2 * PI);
@@ -72,6 +72,7 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 	inter_y = floor(((mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE) + y_add_pixel);
 	x_inc = CELL_SIZE / tan(angle);
 	inter_x = mlx_data->camera->pixel_x + (inter_y - mlx_data->camera->pixel_y) / tan(angle);
+
 	while(!wall_hit_or_out_bounds(mlx_data, inter_y, inter_x))
 	{
 		inter_y += y_inc;
@@ -130,19 +131,23 @@ float	calculate_v_inter(t_mlx_data *mlx_data, float angle)
 void bresenham_line(mlx_image_t *win, int x1, int y1, int x2, int y2, int color, int windowWidth, int windowHeight, t_mlx_data *mlx_data)
 {
     
-
+	if (mlx_data->ray->ray_n == SCREEN_WIDTH/2)
+		printf("coordinates received x1 %d y1 : %d, x2 %d, y2: %d\n", x1, y1, x2, y2);
+	
 	int dx = abs(x2 - x1);
     int dy = abs(y2 - y1);
     int sx = (x1 < x2) ? 1 : -1;
     int sy = (y1 < y2) ? 1 : -1;  // This stays as-is because we want to move downward when y1 < y2
     int err = dx - dy;
+	int p = 2 * err;
 
     while (1)
     {
         // Bounds checking to ensure we're within the window's dimensions
         
 		//printf("value of x1 : %d\n, value of y1: %d\n", x1, y1);
-		if (x1 < 0 || y1 < 0 || x1 / CELL_SIZE > mlx_data->game->n_columns -1 || y1 / CELL_SIZE > mlx_data->game->n_rows -1 )
+		if (x1 < 0 || y1 < 0 || x1 / CELL_SIZE > mlx_data->game->n_columns -1 || y1 / CELL_SIZE > mlx_data->game->n_rows -1 ||\
+		 	(mlx_data->game->working_map[y1/CELL_SIZE][x1/CELL_SIZE] == '1'))
             break;
 
         // Plot the pixel at the current coordinates
@@ -178,13 +183,16 @@ void	ray_casting(t_mlx_data *mlx_data)
 	int flag = 0;
 
 	mlx_data->ray->ray_n = 0;
-	mlx_data->ray->current_angle = normailze_angle(mlx_data->camera->angle - (mlx_data->camera->fov_radi / 2));
+	mlx_data->ray->current_angle = normalize_angle(mlx_data->camera->angle - (mlx_data->camera->fov_radi / 2));
 	while(mlx_data->ray->ray_n < SCREEN_WIDTH)
 	{
+		flag = 0;
 		//printf("Current angle of the ray value in grades %lf\n", mlx_data->ray->current_angle * 180 / PI);
 		h_inter_dist = calculate_h_inter(mlx_data, mlx_data->ray->current_angle);
 		v_inter_dist = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
-		if (h_inter_dist < v_inter_dist)
+		if (mlx_data->ray->ray_n == SCREEN_WIDTH/2)
+			printf("NOW distance from intersection with horiz grid %lf and with vert grid %lf\n", h_inter_dist, v_inter_dist);
+		if (h_inter_dist < v_inter_dist && !(h_inter_dist < 0))
 		{
 			flag = 1;
 			mlx_data->ray->wall_dst = h_inter_dist;
@@ -193,7 +201,6 @@ void	ray_casting(t_mlx_data *mlx_data)
 			mlx_data->ray->wall_dst = v_inter_dist;
 		//WRITE A FUNCTOIN TO DRAW THE CURRENT RAY AND KEEP IT
 		//something to draw the walls
-		mlx_data->ray->ray_n++;
 		if (flag)
 		{
 			// printf("current wall distance is: %lf\n", h_inter_dist);
@@ -206,9 +213,10 @@ void	ray_casting(t_mlx_data *mlx_data)
 			bresenham_line(mlx_data->main_image,mlx_data->camera->pixel_x,\
 			mlx_data->camera->pixel_y, mlx_data->ray->v_hit_x, mlx_data->ray->v_hit_y, 0x00FF00FF, SCREEN_WIDTH, SCREEN_HEIGHT, mlx_data);
 		}
+		mlx_data->ray->ray_n++;
 		mlx_data->ray->current_angle += mlx_data->ray->unit_angle; //I need to double check if this is the case
 	}
 	// printf("last ray lenght with h_inter %lf\n", h_inter_dist);
 	// printf("last ray lenght with v_inter  %lf\n", v_inter_dist);
-	printf("last day lenght choosen  %lf\n", mlx_data->ray->wall_dst);
+	//printf("last day lenght choosen  %lf\n", mlx_data->ray->wall_dst);
 }
