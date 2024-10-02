@@ -68,19 +68,22 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 	float	inter_x;
 	float	inter_y;
 	int		y_add_pixel;
-
-	// if (angle == PI /2 || angle == PI *3/2)
-	// 	angle += 0.0001;
+	if (angle == PI / 2 || angle == 3 * PI / 2) {
+    // Slightly offset angle to avoid division by zero
+    angle += 0.0001;
+}
 	inc_and_pixel(angle, &y_inc, &y_add_pixel, true);
 	inter_y = floor(mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE;
-	if (mlx_data->ray->ray_n == 24)
-		printf("WTFFFF IT SHOULD BE 160 %lf\n", inter_y);
 	x_inc = CELL_SIZE / tan(angle);
+
+	if (angle > PI && angle < 3 *PI/2)
+		x_inc *= -1;
+	
 	inter_x = mlx_data->camera->pixel_x + (inter_y - mlx_data->camera->pixel_y) / tan(angle);
 	if (mlx_data->ray->ray_n == 24)
 	{
-		printf("value of inter_x at the beginning %lf value o inter_y %lf\n", inter_x, inter_y);
-		printf("x_INC %lf and y_INC %lf\n", x_inc, y_inc);
+		printf("HORIZONTAL: value of inter_x at the beginning %lf value o inter_y %lf\n", inter_x, inter_y);
+		printf("VERTICAL: x_INC %lf and y_INC %lf with angle of: %lf\n", x_inc, y_inc, angle);
 	}
 	while(!wall_hit_or_out_bounds(mlx_data, inter_y + y_add_pixel, inter_x))
 	{
@@ -88,7 +91,7 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 		inter_x += x_inc;
 	}
 	if (mlx_data->ray->ray_n == 24)
-		printf("value of inter_x at the end %lf value o inter_y %lf\n", inter_x, inter_y);
+		printf("HORIZONTAL: value of inter_x at the end %lf value o inter_y %lf\n", inter_x, inter_y);
 	mlx_data->ray->h_hit_x = inter_x;//i will add this but could delete if usless
 	mlx_data->ray->h_hit_y = inter_y;//same as here
 
@@ -110,20 +113,31 @@ float	calculate_v_inter(t_mlx_data *mlx_data, float angle)
 	int		x_add_pixel;
 
 
+
+	if (angle == PI / 2 || angle == 3 * PI / 2)
+    	angle += 0.0001;
 	inc_and_pixel(angle, &x_inc, &x_add_pixel, false);
 	y_inc = CELL_SIZE * tan(angle);
+
+	if (angle > PI && angle < 3 *PI/2)
+		y_inc *= -1;
+	
+
 	inter_x = floor(mlx_data->camera->pixel_x / CELL_SIZE) * CELL_SIZE + x_add_pixel;
 	inter_y = mlx_data->camera->pixel_y + (inter_x - mlx_data->camera->pixel_x) * tan(angle);
 
-	// if (mlx_data->ray->ray_n == 24)
-	// 	printf("value of inter_x at the beginning %lf value o inter_y %lf\n", inter_x, inter_y);
+	if (mlx_data->ray->ray_n == 24)
+	{
+		printf("VERTICAL: value of inter_x at the beginning %lf value o inter_y %lf\n", inter_x, inter_y);
+		printf("VERTICAL: x_INC %lf and y_INC %lf with angle of: %lf\n", x_inc, y_inc, angle);
+	}
 	while(!wall_hit_or_out_bounds(mlx_data, inter_y, inter_x))
 	{
 		inter_y += y_inc;
 		inter_x += x_inc;
 	}
-	// if (mlx_data->ray->ray_n == 24)
-	// 	printf("value of inter_x at the end %lf value o inter_y %lf\n", inter_x, inter_y);
+	if (mlx_data->ray->ray_n == 24)
+		printf("VERTICAL: value of inter_x at the end %lf value o inter_y %lf\n", inter_x, inter_y);
 	mlx_data->ray->v_hit_x = inter_x;//i will add this but could delete if usless
 	mlx_data->ray->v_hit_y = inter_y;//same as here
 	//return (fabs((inter_y - mlx_data->camera->pixel_y) * lookup_sin(angle))); for now we keep square but this is a most efficient method
@@ -183,7 +197,7 @@ void	ray_casting(t_mlx_data *mlx_data)
 	float	h_inter_dist;
 	float	v_inter_dist;
 	int	which_ray;
-
+	
 	mlx_data->ray->ray_n = 0;
 	mlx_data->ray->current_angle = normalize_angle(mlx_data->camera->angle - (mlx_data->camera->fov_radi / 2));
 	while(mlx_data->ray->ray_n < SCREEN_WIDTH)
@@ -219,7 +233,7 @@ void	ray_casting(t_mlx_data *mlx_data)
 		// 	printf("NOW CHOSEN DISTANCE FOR THE INTERSECTION %lf the y inter is: %lf and the x inter is %lf and the angle is: %lf and rayN is: %d\n" \
 		// 	,mlx_data->ray->wall_dst, mlx_data->ray->y_final_hit, mlx_data->ray->x_final_hit, mlx_data->ray->current_angle, mlx_data->ray->ray_n);
 		mlx_data->ray->ray_n++;
-		mlx_data->ray->current_angle = normalize_angle(mlx_data->ray->current_angle + mlx_data->ray->unit_angle); //I need to double check if this is the case
+		mlx_data->ray->current_angle = normalize_angle(mlx_data->ray->current_angle + mlx_data->camera->fov_radi / SCREEN_WIDTH); //I need to double check if this is the case
 	}
 	// printf("last ray lenght with h_inter %lf\n", h_inter_dist);
 	// printf("last ray lenght with v_inter  %lf\n", v_inter_dist);
