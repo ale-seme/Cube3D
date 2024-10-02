@@ -81,6 +81,8 @@ typedef struct s_ray
 	float	h_hit_y;
 	float	wall_dst;
 	bool	wall_met;
+	float	x_final_hit;
+	float	y_final_hit;
 } t_ray;
 
 
