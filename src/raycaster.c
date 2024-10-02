@@ -68,35 +68,33 @@ float	calculate_h_inter(t_mlx_data *mlx_data, float angle)
 	float	inter_x;
 	float	inter_y;
 	int		y_add_pixel;
-	if (angle == PI / 2 || angle == 3 * PI / 2) {
-    // Slightly offset angle to avoid division by zero
-    angle += 0.0001;
-}
+	if (angle == PI / 2 || angle == 3 * PI / 2)
+    	angle += 0.0001;
 	inc_and_pixel(angle, &y_inc, &y_add_pixel, true);
-	inter_y = floor(mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE;
+	inter_y = floor(mlx_data->camera->pixel_y / CELL_SIZE) * CELL_SIZE + y_add_pixel;
 	x_inc = CELL_SIZE / tan(angle);
 
-	if (angle > PI && angle < 3 *PI/2)
+	if (angle > PI && angle < 2 * PI)
 		x_inc *= -1;
 	
 	inter_x = mlx_data->camera->pixel_x + (inter_y - mlx_data->camera->pixel_y) / tan(angle);
-	if (mlx_data->ray->ray_n == 24)
+	if (mlx_data->ray->ray_n == 960)
 	{
 		printf("HORIZONTAL: value of inter_x at the beginning %lf value o inter_y %lf\n", inter_x, inter_y);
-		printf("VERTICAL: x_INC %lf and y_INC %lf with angle of: %lf\n", x_inc, y_inc, angle);
+		printf("HORIZONTAL: x_INC %lf and y_INC %lf with angle of: %lf\n", x_inc, y_inc, angle);
 	}
-	while(!wall_hit_or_out_bounds(mlx_data, inter_y + y_add_pixel, inter_x))
+	while(!wall_hit_or_out_bounds(mlx_data, inter_y, inter_x))
 	{
 		inter_y += y_inc;
 		inter_x += x_inc;
 	}
-	if (mlx_data->ray->ray_n == 24)
+	if (mlx_data->ray->ray_n == 960)
 		printf("HORIZONTAL: value of inter_x at the end %lf value o inter_y %lf\n", inter_x, inter_y);
 	mlx_data->ray->h_hit_x = inter_x;//i will add this but could delete if usless
 	mlx_data->ray->h_hit_y = inter_y;//same as here
 
 	//return (fabs((inter_x - mlx_data->camera->pixel_x) * lookup_cos(angle))); //for now we keep square but this is a most efficient method
-	if (mlx_data->ray->ray_n == 24)
+	if (mlx_data->ray->ray_n == 960)
 		printf("horiz distance %lf\n",sqrt(pow(inter_x - mlx_data->camera->pixel_x, 2) + \
 	 	pow(inter_y - mlx_data->camera->pixel_y, 2)));
 	
@@ -119,14 +117,13 @@ float	calculate_v_inter(t_mlx_data *mlx_data, float angle)
 	inc_and_pixel(angle, &x_inc, &x_add_pixel, false);
 	y_inc = CELL_SIZE * tan(angle);
 
-	if (angle > PI && angle < 3 *PI/2)
+	if (angle > PI/2 && angle < 3 *PI/2)
 		y_inc *= -1;
-	
 
 	inter_x = floor(mlx_data->camera->pixel_x / CELL_SIZE) * CELL_SIZE + x_add_pixel;
 	inter_y = mlx_data->camera->pixel_y + (inter_x - mlx_data->camera->pixel_x) * tan(angle);
 
-	if (mlx_data->ray->ray_n == 24)
+	if (mlx_data->ray->ray_n == 960)
 	{
 		printf("VERTICAL: value of inter_x at the beginning %lf value o inter_y %lf\n", inter_x, inter_y);
 		printf("VERTICAL: x_INC %lf and y_INC %lf with angle of: %lf\n", x_inc, y_inc, angle);
@@ -136,7 +133,7 @@ float	calculate_v_inter(t_mlx_data *mlx_data, float angle)
 		inter_y += y_inc;
 		inter_x += x_inc;
 	}
-	if (mlx_data->ray->ray_n == 24)
+	if (mlx_data->ray->ray_n == 960)
 		printf("VERTICAL: value of inter_x at the end %lf value o inter_y %lf\n", inter_x, inter_y);
 	mlx_data->ray->v_hit_x = inter_x;//i will add this but could delete if usless
 	mlx_data->ray->v_hit_y = inter_y;//same as here
@@ -150,8 +147,10 @@ void bresenham_line(mlx_image_t *win, int x1, int y1, int x2, int y2, int color,
 {
     
 	
-	//printf("coordinates received x1 %d y1 : %d, x2 %d, y2: %d ray NUMBER: %d\n", x1, y1, x2, y2, mlx_data->ray->ray_n);
-	
+	if (mlx_data->ray->ray_n != SCREEN_WIDTH/2)
+		return ;
+	// printf("coordinates received x1 %d y1 : %d, x2 %d, y2: %d ray NUMBER: %d\n", x1, y1, x2, y2, mlx_data->ray->ray_n);
+	// printf("inside the bresenham algo the angle of the mid ray is: %lf\n", mlx_data->ray->current_angle * 180/PI);
 	int dx = abs(x2 - x1);
     int dy = abs(y2 - y1);
     int sx = (x1 < x2) ? 1 : -1;
@@ -207,8 +206,7 @@ void	ray_casting(t_mlx_data *mlx_data)
 		v_inter_dist = calculate_v_inter(mlx_data, mlx_data->ray->current_angle);
 		if (h_inter_dist < v_inter_dist)
 		{
-			if (mlx_data->ray->ray_n == 24)
-				printf("cAZZZZZZZ\n");
+
 			mlx_data->ray->wall_dst = h_inter_dist;
 			mlx_data->ray->x_final_hit = mlx_data->ray->h_hit_x;
 			mlx_data->ray->y_final_hit = mlx_data->ray->h_hit_y;
@@ -218,11 +216,6 @@ void	ray_casting(t_mlx_data *mlx_data)
 			mlx_data->ray->wall_dst = v_inter_dist;
 			mlx_data->ray->x_final_hit = mlx_data->ray->v_hit_x;
 			mlx_data->ray->y_final_hit = mlx_data->ray->v_hit_y;
-			if (mlx_data->ray->ray_n == 24)
-			{
-				printf("OOOOOOOO\n");
-				printf("FINAL DISTANCE: %lf\n", mlx_data->ray->wall_dst);
-			}
 		}
 
 
