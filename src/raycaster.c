@@ -147,8 +147,8 @@ void bresenham_line(t_mlx_data *mlx_data, int x1, int y1, int x2, int y2)
 {
     
 	
-	if (mlx_data->ray->ray_n != SCREEN_WIDTH/2)
-		return ;
+	// if (mlx_data->ray->ray_n != SCREEN_WIDTH/2)
+	// 	return ;
 	// printf("coordinates received x1 %d y1 : %d, x2 %d, y2: %d ray NUMBER: %d\n", x1, y1, x2, y2, mlx_data->ray->ray_n);
 	// printf("inside the bresenham algo the angle of the mid ray is: %lf\n", mlx_data->ray->current_angle * 180/PI);
 	int dx = abs(x2 - x1);
