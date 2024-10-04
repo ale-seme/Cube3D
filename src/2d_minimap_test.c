@@ -221,6 +221,7 @@ int main(int argc, char **argv)
 	t_mlx_data mlx_data;
 
     game.start_list_pointer = NULL;
+	mlx_set_setting(MLX_STRETCH_IMAGE, true);
 	initialize_game(&game);
 	if (!successfull_parsing(argc, argv, &game))
 		return (free_everything(&game), 1); // i still need to write a functoin to free both in one shot

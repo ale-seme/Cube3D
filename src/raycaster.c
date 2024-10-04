@@ -220,5 +220,6 @@ void	ray_casting(t_mlx_data *mlx_data)
 		mlx_data->camera->pixel_y, mlx_data->ray->x_final_hit, mlx_data->ray->y_final_hit);
 		mlx_data->ray->ray_n++;
 		mlx_data->ray->current_angle = normalize_angle(mlx_data->ray->current_angle + mlx_data->ray->unit_angle); //we could also for the minipap less ray to cast, but we will see
+		manage_wall_slice(mlx_data);
 	}
 }
