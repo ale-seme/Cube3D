@@ -195,7 +195,6 @@ void	ray_casting(t_mlx_data *mlx_data)
 {
 	float	h_inter_dist;
 	float	v_inter_dist;
-	int	which_ray;
 	
 	mlx_data->ray->ray_n = 0;
 	mlx_data->ray->current_angle = normalize_angle(mlx_data->camera->angle - (mlx_data->camera->fov_radi / 2));
