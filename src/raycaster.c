@@ -196,6 +196,7 @@ void	ray_casting(t_mlx_data *mlx_data)
 	float	h_inter_dist;
 	float	v_inter_dist;
 	
+	mlx_data->ray->ray_n = 0; //we need to inizialize to 0 every time we call the funciton, therefore I couldn't initialize it to 0 once for all at the beginning
 	mlx_data->ray->unit_angle = mlx_data->camera->fov_radi / SCREEN_WIDTH;
 	mlx_data->ray->current_angle = normalize_angle(mlx_data->camera->angle - (mlx_data->camera->fov_radi / 2));
 	while(mlx_data->ray->ray_n < SCREEN_WIDTH)

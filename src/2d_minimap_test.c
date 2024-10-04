@@ -52,7 +52,6 @@ static void initialize_data_for_mlx(t_game *game, t_mlx_data *mlx_data)
     mlx_data->camera->fov_radi = FOW * PI/180.0;
 	mlx_data->camera->plane_distance = SCREEN_WIDTH/2 * (tan(mlx_data->camera->fov_radi/2));
     mlx_data->ray->unit_angle = mlx_data->camera->fov_radi / SCREEN_WIDTH; //this is the unit angle for each ray cast
-	mlx_data->ray->ray_n = 0;
     // mlx_data->camera->pdx = cos(mlx_data->camera->angle) * 4;
     // mlx_data->camera->pdy = sin(mlx_data->camera->angle) * 4; 
 }
