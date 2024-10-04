@@ -229,4 +229,7 @@ void	ray_casting(t_mlx_data *mlx_data);
 void init_trig_tables(void);
 float lookup_sin(float angle);
 float lookup_cos(float angle);
+
+/*drawing the environment of the game*/
+void	manage_wall_slice(t_mlx_data *mlx_data);
 #endif
