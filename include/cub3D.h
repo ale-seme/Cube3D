@@ -106,6 +106,7 @@ typedef struct s_lst
  * @param y Current y cell of the player in map coordinates
  * @param angle Current angle of the player 
  * @param fov_radi Field of view (FOW) expressed in radiants
+ * @param plane_distance Distance from the camera and the projeciton plane
  * @param cardinal_point Character containing the starting cardinal(NSOW)
  */
 typedef struct s_camera
@@ -118,6 +119,7 @@ typedef struct s_camera
 	float		pdy;		
 	float		angle;
 	float		fov_radi;
+	float		plane_distance;
 	char		cardinal_point;
 	int			test;
 } t_camera;
