@@ -10,8 +10,22 @@ void	wall_drawing(t_mlx_data *mlx_data, float slice_height, int high_pixel, int 
 	}
 }
 
+// void	fill_hex_color(uint32_t *final_color, int color_component)
+// {
+// 	(*final_color) >> 8;
+	
+// }
+
 void	floor_and_ceiling_drawing(t_mlx_data *mlx_data, int high_pixel, int low_pixel)
 {
+	uint32_t	final_color;
+	int	i;
+
+	i = 0;
+	// while(mlx_data->game->floor_rbg_array[i])
+	// {
+	// 	fill_hex_color(&final_color, mlx_data->game->floor_rbg_array[i++]);
+	// }
 	while(low_pixel < SCREEN_HEIGHT)
 	{
 		mlx_put_pixel(mlx_data->main_image, mlx_data->ray->ray_n, low_pixel++, 0xFFFFFF99);
