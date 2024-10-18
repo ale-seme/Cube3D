@@ -28,7 +28,7 @@ void	floor_and_ceiling_drawing(t_mlx_data *mlx_data, int high_pixel, int low_pix
 	i = 0;
 	
 	fill_hex_color(&final_color, mlx_data->game->floor_rbg_array, 0xAA);
-	while(low_pixel < SCREEN_HEIGHT)
+	while(low_pixel < SCREEN_HEIGHT -1)
 	{
 		mlx_put_pixel(mlx_data->main_image, mlx_data->ray->ray_n, low_pixel++, final_color);
 	}
