@@ -1,6 +1,6 @@
 NAME = cub3D
 
-CFLAGS = -g #-Wall -Werror -Wextra
+CFLAGS = -Wall -Wextra -Werror #-g -fsanitize=address
 
 LINKS =
 
@@ -10,8 +10,9 @@ MLXFLAGS = MLX42/build/libmlx42.a -Iinclude -ldl -lglfw -pthread -lm
 
 SRC = main.c get_next_line.c initial_parsing.c parsing_ids_1.c \
 	parsing_ids_2.c parsing_ids_3.c parsing_ids_4.c parsing_map.c \
-	free_stuff.c raycaster.c test.c lookup_trig_table.c 2d_minimap_test.c \
-	drawing_environment.c
+	free_stuff.c raycaster.c draw_everything.c key_hooks_2.c \
+	drawing_environment.c errors.c initialize_data_for_mlx.c key_hooks.c \
+	display_2d_map.c drawing_environment_2.c bresenham.c raycaster2.c
 
 DIR_SRC = src
 
@@ -26,13 +27,21 @@ LIBFT = libft/libft.a
 
 GIT_MLX = git clone https://github.com/codam-coding-college/MLX42.git
 
-${NAME}: ${OBJ} ${LIBFT}
+MLX_LIB = MLX42/build/libmlx42.a
+
+${NAME}: ${MLX_LIB} ${OBJ} ${LIBFT}
 	@${CC} -o ${CFLAGS} $^ ${LINKS} -o $@ $(MLXFLAGS)
 
 all : ${NAME}
 
 ${LIBFT}:
 	@make bonus -C libft
+
+${MLX_LIB}:
+	$(GIT_MLX)
+	cd MLX42 && cmake -B build
+	cd MLX42 && cmake --build build -j4 && clear
+
 
 ${OBJ}: ${DIR_OBJ}/%.o: ${DIR_SRC}/%.c
 	@mkdir -p obj
@@ -42,17 +51,9 @@ clean:
 	@rm -rf ${DIR_OBJ}
 
 fclean: clean
+	rm -rf MLX42
 	@rm -rf ${NAME}
 	@make fclean -C libft
-
-download_mlx42:
-	$(GIT_MLX)
-	cd MLX42 && cmake -B build
-	cd MLX42 && cmake --build build -j4 && clear
-	echo "\033[0;32mNow you can "make" and play :=D\033[0m"
-
-delete_mlx42:
-	rm -rf MLX42
 
 re: fclean all 
 

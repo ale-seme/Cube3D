@@ -1,0 +1,9 @@
+SO ./textures_ids/south.png
+WE ./textures_ids/west.png
+EA ./textures_ids/east.png
+
+F 220,100,0
+C 225,30,0
+111
+1N1
+111

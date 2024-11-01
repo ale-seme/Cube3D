@@ -1,9 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   parsing_ids_2.c                                    :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: rgoossen <rgoossen@student.codam.nl>         +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/22 17:49:09 by rgoossen      #+#    #+#                 */
+/*   Updated: 2024/10/27 16:51:49 by rgoossen      ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3D.h"
 
-//need to double check with inputs that are 002 or 00000004
-
-
-static void store_id_texture(t_game *game, int n_id, char *texture)
+// TODO: need to double check with inputs that are 002 or 00000004
+static void	store_id_texture(t_game *game, int n_id, char *texture)
 {
 	if (n_id == 0)
 		game->texture_nord = texture;
@@ -17,19 +27,18 @@ static void store_id_texture(t_game *game, int n_id, char *texture)
 
 static int	check_and_store_texture(char *line, int n_id, t_game *game)
 {
-	int	texture_fd;
-	char *temp;
-	
+	int		texture_fd;
+	char	*temp;
+
 	temp = line + 2;
 	if (!temp || !temp[0] || !ft_isspace(temp[0]))
 		return (printf(ERR_FAKE_ID), 0);
 	increment_id_count(game, n_id);
-	while((*temp >= 9 && *temp <= 13) || *temp == ' ')
+	while ((*temp >= 9 && *temp <= 13) || *temp == ' ')
 		temp++;
 	texture_fd = open(temp, O_RDONLY | __O_DIRECTORY);
 	if (texture_fd != -1)
-		return(close(texture_fd), printf(ERR_TX_DIR), 0);
-	printf("temp:%s\n", temp);
+		return (close(texture_fd), printf(ERR_TX_DIR), 0);
 	texture_fd = open(temp, O_RDONLY);
 	if (texture_fd == -1)
 	{
@@ -41,7 +50,6 @@ static int	check_and_store_texture(char *line, int n_id, t_game *game)
 	return (1);
 }
 
-
 static void	populate_cardinals(char **cardinals)
 {
 	cardinals[0] = "NO";
@@ -52,12 +60,12 @@ static void	populate_cardinals(char **cardinals)
 
 int	check_ids_and_info(char *line, t_game *game)
 {
-	int	x;
-	char *cardinals[4];
+	int		x;
+	char	*cardinals[4];
 
 	x = -1;
 	populate_cardinals(cardinals);
-	while(++x < 4)
+	while (++x < 4)
 	{
 		if (!ft_strncmp(line, cardinals[x], 2))
 		{

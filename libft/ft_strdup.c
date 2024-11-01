@@ -6,7 +6,7 @@
 /*   By: asemerar <asemerar@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 14:52:38 by asemerar      #+#    #+#                 */
-/*   Updated: 2024/07/18 15:44:07 by ale           ########   odam.nl         */
+/*   Updated: 2024/10/30 12:54:05 by asemerar      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 
 	if (!s)
-		return NULL;
+		return (NULL);
 	i = 0;
 	p1 = (char *)malloc(ft_strlen(s) + 1);
 	if (!p1)
